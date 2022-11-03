@@ -76,6 +76,6 @@ They remains the optional parameters.
 
 ## Does the name of args and kwargs matters? 
 
-No, instead of args and kwargs we can use any name for these variable. Only the number of asterisks matters. one asterisk before any name (*) makes it a tuple, and two asterisks make before any variable makes it a dictionary.
+No, instead of args and kwargs we can use any name for these variable. Only the number of asterisks matters. one asterisk before any name (*) makes it a tuple, and two asterisks (**) make before any variable makes it a dictionary.
 
 
