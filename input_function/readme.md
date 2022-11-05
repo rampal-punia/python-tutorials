@@ -1,22 +1,13 @@
-# How to take input from your user? 
+# Input function
 
-# How to manipulate, and operate the input?
+An in-built python function to take the user input from the prompt.
 
-# Use mathematical expression on the input.
+## How to manipulate, and operate the input?
+Assign the value to any variable and now we can use an operation on that variable for using further in our python code.
 
-# 3 Practicals
-    * Copy cat the user. Keep repeating whatever your user writes until he enters "quit".
-
-    * Write a program to tell user if the entered number is even or odd?
-    Exit the program if user types "quit".
-
-    * Tell the table of a number.
-
-# Build a project
-    * Train ticket price.
-        == Ask for your age
-        == If the age is less than 3 the ticket is free.
-        == If the age is between 4 - 12 the amount is 50%.
-        == If the age is more than 12, the amount is 100%
-        Bonus:
-        Catch the error if the user input any wrong data.
+## Demo
+Train ticket price.
+    - Ask for your age
+    - If the age is less than 3 the ticket is free.
+    - If the age is between 4 - 12 the amount is 50%.
+    - If the age is more than 12, the amount is 100%
