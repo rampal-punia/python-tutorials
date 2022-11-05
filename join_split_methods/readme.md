@@ -1,65 +1,59 @@
-# Useful string and file-path operations
-    - string.split()
-    - string.join()
+# Join & Split
 
-    - os.path.split()
-    - os.path.join()
+## As String methods
+- string.split()
+- string.join()
 
-# split():
-    - Where to use?
-        -- Used to split a string as required and convert it into 
-        an iterable.
+## As OS module methods
+- os.path.split()
+- os.path.join()
 
-    - Syntax
-        -- string.split('split_operator', maxsplit)
+## str.split():
+- Where to use?
+    - Used to split a string as required and convert it into an iterable.
 
-    - Practical
-        -- Split a string using different separators.
-        -- Get the first name only from a list of full names.
+- Syntax
+    - string.split('split_operator', maxsplit)
 
-# Join():
-    - Where to use?
-        -- Used to join a list/tuple as required and convert 
-        it into a string.
+- Demo.py
+    - Split a string using different separators.
+    - Get the first name only from a list of full names.
 
-    - Syntax
-        -- 'join_operator'.join(iterable)
+## str.Join():
+- Where to use?
+    - Used to join a list/tuple as required and convert 
+    it into a string.
 
-    - Practical
-        -- Join texts from a list of texts.
+- Syntax
+    - 'join_operator'.join(iterable)
 
-# os.path.split():
-    - Where to use?
-        -- Used to correctly split the path of a file 
-        at '/' or '\', automatically and gives back the 
-        filename. It makes the split of the file names os independent.
+- demo.py
+    - Join texts from a list of texts.
 
-    - Syntax
-        -- os.path.split(path)
+## os.path.split():
+- Where to use?
+    - Used to correctly split the path of a file at '/' or '\', automatically and gives back the 
+    filename. It makes the split of the file names os independent.
 
-    - Practical
-        -- split the path of a file and get back the file name.
+- Syntax
+    - os.path.split(path)
 
-# os.path.join():
-    - Where to use?
-        -- Joins one or more path names into one complete path. 
-        So, Instead of hard-coding the path of a file or directory 
-        manually, use this method to join path components intelligently.
+- Demo.py
+    - split the path of a file and get back the file name.
 
-    - Syntax
-        -- os.path.join(path1, path2, path3, ...)
+## os.path.join():
+- Where to use?
+    - Joins one or more path names into one complete path. So, Instead of hard-coding the path of a file or directory manually, use this method to join path components intelligently.
 
-    - Practical
-        -- join the paths of a file to the current directory.
+- Syntax
+    - os.path.join(path1, path2, path3, ...)
+
+- Demo.py
+    - join the paths of a file to the current directory.
 
 
-# Project
-    - A file containing 500 phone numbers is given. 
-    Read all the phone numbers from that file, split the country
-    codes from the phone numbers and put them inside a bracket,
-    spilt the country code and phone numbers with hyphen(-) 
-    and save these phone numbers in a separate file.
+## Project demo
+- A file containing 500 phone numbers is given. Read all the phone numbers from that file, split the country codes from the phone numbers and put them inside a bracket, spilt the country code and phone numbers with hyphen(-) and save these phone numbers in a separate file.
 
-    for example:
-    convert phone_num = 918888888888  into phone_num = 
-    (91)-8888888888
+for example:
+convert phone_num = 918888888888  into phone_num =  (91)-8888888888
