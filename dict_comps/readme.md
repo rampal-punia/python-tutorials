@@ -4,10 +4,10 @@
 - We combine the for loop and the creation of new key and value by appending each new key, value in a dictionary. (simultaneously)
 
 ## Benefits
-- more readable code
-- faster running time
-- smaller syntax
-- local scope for the variable.
+--> more readable code
+--> faster running time
+--> smaller syntax
+--> local scope for the variable.
 
 
 ## Drawbacks
