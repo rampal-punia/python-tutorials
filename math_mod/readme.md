@@ -6,54 +6,54 @@ Complex numbers are the numbers that are expressed in the form of a+ib where, a,
 
 Math module is organized in the following sections.
 
-# Number-theoretic and representation functions
-# Power and logarithmic functions
-# Trigonometric functions
-# Angular conversion
-# Hyperbolic functionsNumb
-# Special functions
-# Constants
+- Number-theoretic and representation functions
+- Power and logarithmic functions
+- Trigonometric functions
+- Angular conversion
+- Hyperbolic functionsNumb
+- Special functions
+- Constants
 
 
-# Number-theoretic and representation functions
-    - ceil(x)
-    - floor(x)
-    - gcd(x,y)
-    - fabs(x)
-    - factorial(x)
-    - fsum(iterable)
-        print(math.fsum([0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, ]))
-        print(sum([0.1,  0.1, 0.1, 0.1,  0.1,  0.1,  0.1, 0.1, 0.1,  0.1, ]))
-    - prod(iterable, *, start=1)
-    - trunc(x)
+## Number-theoretic and representation functions
+- ceil(x)
+- floor(x)
+- gcd(x,y)
+- fabs(x)
+- factorial(x)
+- fsum(iterable)
+    - print(math.fsum([0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, ]))
+    - print(sum([0.1,  0.1, 0.1, 0.1,  0.1,  0.1,  0.1, 0.1, 0.1,  0.1, ]))
+- prod(iterable, *, start=1)
+- trunc(x)
 
-# Power and log functions
-    - exp(x)
-    - log(x[, base])
-    - log2(x)
-    - log10(x)
-    - pow(x, y)
-    - sqrt(x)
+## Power and log functions
+- exp(x)
+- log(x[, base])
+- log2(x)
+- log10(x)
+- pow(x, y)
+- sqrt(x)
 
-# Trigonomatry functions
-    - sin(x)
-        print(math.sin(1.5707963267948966))
-        print(math.radians(90))
-    - asin(x)
+## Trigonomatry functions
+- sin(x)
+    - print(math.sin(1.5707963267948966))
+    - print(math.radians(90))
+- asin(x)
 
-    - cos(x)
-    - acos(x)
+- cos(x)
+- acos(x)
 
-    - tan(x)
-    - atan(x)
+- tan(x)
+- atan(x)
 
-# Angular conversion
-    - degrees(x)
-    - radians(x)
+## Angular conversion
+- degrees(x)
+- radians(x)
 
-# Constants conversion
-    - pi()
-    - e(x)
+## Constants conversion
+- pi()
+- e(x)
 
 
 
