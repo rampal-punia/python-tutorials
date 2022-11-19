@@ -15,7 +15,8 @@ Note:- If you are on Linux, chances are you already have a version of Python pre
 ### Linux:
 ```bash
 $ sudo apt-get update
-$ sudo apt-get install python3
+$ sudo apt-get install python3 # Or use
+$ sudo apt-get upgrade python3
 
 # For creating virtual environments
 $ sudo apt-get install python3-dev python3-pip
@@ -36,3 +37,4 @@ $ brew install python3
 
 Note:- On window, `checkbox` to add the Python to your PATH should be checked, if the installer offers this option.
 
+For creating python virtual environments, see this gist: [Setup-Python3-virtual-environment](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7)
