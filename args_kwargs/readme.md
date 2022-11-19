@@ -41,27 +41,36 @@ print(add_numbers(2, 3, 4, 5, 6, 7, 8, 9, 11))
 Example: Without `**kwargs`.
 
 ```python
-def display_name(fname, lname):
-    return f"{fname} {lname}"
+student_marks = {}
 
 
-print(display_name(fname="Mary", lname="Jane"))
-# Output: Mary Jane
+def add_student_marks(name, marks):
+    student_marks[name] = marks
+
+
+add_student_marks('Rahul', 80)
+add_student_marks('Arun', 85)
+print(student_marks)
 ```
+We need to call the `add_student_marks` function twice to add 2 students.
 
-Passing `any number of keyword arguments` to a function. 
+### Add multiple students with single function call.
+Passing `any number of keyword arguments` to a function:
 
-The above function can be modified to accept any number of keyword arguments.
+Let's modify the same `add_student_marks` function to receive any number of student in a single function call. The above function can be modified to accept any number of keyword arguments with the help of `**kwargs`.
 
 Example: With `**kwargs`.
 ```python
-def display(**kwargs):
-    for k, v in kwargs.items():
-        print(f"{k} : {v}")
+student_marks = {}
 
-# Passing as many numbers of keyword arguments as required.
-print(display(fname="Mary", lname="Jane",
-      address="XYZ city", ph_num="123456789", pin="111111"))
+
+def add_student_marks(**marks):
+    for name, marks in marks.items():
+        student_marks[name] = marks
+
+
+add_student_marks(Rahul=80, Arun=85, Kishore=90, Anju=91)
+print(student_marks)
 
 ```
 ---
