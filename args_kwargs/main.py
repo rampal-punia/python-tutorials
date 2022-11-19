@@ -1,6 +1,6 @@
-'''Example codes used in readme.md
+'''📝 Example codes used in readme.md
 
-Run and check the output
+✨ Run and check the output
 '''
 
 # Args
