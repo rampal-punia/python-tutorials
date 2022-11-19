@@ -4,7 +4,7 @@
 Generally we can pass only, as many numbers of arguments to a function, as the number of parameters placed, during the `function declaration`.
 
 ```python
-# Function to add two variables. (Parameters: a, b)
+# A function to add two variables. (Parameters: a, b)
 def add(a, b):
     return a + b
 
@@ -23,12 +23,15 @@ Let's look at the `*args` first.
 
 
 ### *args
-Passing `any number of positional arguments` to a function. The above `add` function can be modified with the help of args.
+Passing `any number of positional arguments` to a function. 
+
+The above `add` function can be modified with the help of args.
 ```python
-# A python function to add any number of variables.
+# A function to add any number of variables.
 def add_numbers(*args):
     return sum(args)
 
+# Passing as many numbers of arguments as required.
 print(add_numbers(2, 3, 4, 5, 6, 7, 8, 9, 11))
 # Output: 55
 ```
@@ -46,7 +49,9 @@ print(display_name(fname="Mary", lname="Jane"))
 # Output: Mary Jane
 ```
 
-Passing `any number of keyword arguments` to a function. The above function can be modified to accept any number of keyword arguments.
+Passing `any number of keyword arguments` to a function. 
+
+The above function can be modified to accept any number of keyword arguments.
 
 Example: With `**kwargs`.
 ```python
@@ -54,20 +59,19 @@ def display(**kwargs):
     for k, v in kwargs.items():
         print(f"{k} : {v}")
 
+# Passing as many numbers of keyword arguments as required.
 print(display(fname="Mary", lname="Jane",
       address="XYZ city", ph_num="123456789", pin="111111"))
 
 ```
 ---
 
-## What data structures they hold?
-To check this we do:
+## What data structures do `*args & **kwargs` hold?
+To check this we use the in-built `type` function:
 ```python
-# Inside function add_numbers
 print(type(args))
 # Output: <class 'tuple'>
 
-# Inside function display
 print(type(kwargs))
 # Output: <class 'dict'>
 ```
@@ -85,6 +89,6 @@ They remains the optional parameters.
 
 No the name args & kwargs does not matter here.
 
-Instead of `args` and `kwargs` we can use any name for these variable. Only the number of asterisks matters. One asterisk before any variable_name `*` makes it a `tuple`, and two asterisks before any variable_name `**` make it a dictionary.
+Instead of `args` and `kwargs` we can use any name for these variable. Only the number of asterisks matters. One asterisk `*` before any variable_name makes it a `tuple`, and two asterisks `**` before any variable_name make it a dictionary.
 
 
