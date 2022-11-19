@@ -17,7 +17,7 @@ Here, We can not pass more than 2 arguments. Therefore this `add` function can r
 
 So, what if we need to add more than 2 variables, or any desired numbers of variables. We need a placeholder that can accumulate as many arguments as required by the user. This is a very simple case scenario here. But I hope you get the point. 
 
-Here comes `*args and **kwargs` to rescue. With the help of  `*args and **kwargs` we can pass as many arguments as we like. They work as the placeholders for any numbers of variables.
+Here comes `*args and **kwargs` to rescue. With the help of  `*args and **kwargs` we can pass as many arguments as we like. They work as the placeholder for any number of variables.
 
 Let's look at the `*args` first.
 
@@ -57,7 +57,7 @@ We need to call the `add_student_marks` function twice to add 2 students.
 ### Add multiple students with single function call.
 Passing `any number of keyword arguments` to a function:
 
-Let's modify the same `add_student_marks` function to receive any number of student in a single function call. The above function can be modified to accept any number of keyword arguments with the help of `**kwargs`.
+Let's modify the same `add_student_marks` function to receive any number of students in a single function call. The above function can be modified to accept any number of keyword arguments with the help of `**kwargs`.
 
 Example: With `**kwargs`.
 ```python
@@ -99,5 +99,3 @@ They remains the optional parameters.
 No the name args & kwargs does not matter here.
 
 Instead of `args` and `kwargs` we can use any name for these variable. Only the number of asterisks matters. One asterisk `*` before any variable_name makes it a `tuple`, and two asterisks `**` before any variable_name make it a dictionary.
-
-
