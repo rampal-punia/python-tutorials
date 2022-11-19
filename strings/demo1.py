@@ -12,16 +12,15 @@ matrix = ['nlifeloofw',
           'python'
           ]
 
-print(re.IGNORECASE)
 # search_list = ['one', 'two', 'there']
 # long_string = 'some one long two phrase three'
 # re.IGNORECASE is used to ignore case
-# for word in words:
-#     if re.compile(word, re.IGNORECASE).search('|'.join(matrix)):
-#         # if re.compile('|'.join(words), re.IGNORECASE).search('|'.join(matrix)):
-#         print("Found")
-#     else:
-#         print("Not found")
+for word in words:
+    if re.compile(word, re.IGNORECASE).search('|'.join(matrix)):
+        # if re.compile('|'.join(words), re.IGNORECASE).search('|'.join(matrix)):
+        print("Found")
+    else:
+        print("Not found")
 
 # words = ['holy', 'grail', 'python', 'life', 'of', 'brian', 'fool', 'rain']
 
