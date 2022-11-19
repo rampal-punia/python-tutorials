@@ -1,7 +1,9 @@
 def prepare_pizza(order_num, size, topping1, topping2):
-    """A function to print order details for the pizza to be prepared.
-    While receiving an order from the customer with this function, 
+    """📝 A function to print order details for the pizza to be prepared.
+
+    While, receiving an order from the customer with this function, 
     we can add only 2 toppings. So, this is the limitation of this function.
+
     We will improve it using *args and **kwargs further but first,
     let's understand how it works without *args and **kwargs. 
 
