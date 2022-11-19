@@ -2,7 +2,7 @@
 
 ## 1. [Introduction](https://github.com/CodingMantras/PythonTutorials/tree/master/1_introduction)
 
-- Programming Language]
+- Programming Language
 
 - Why Python
 
