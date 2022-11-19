@@ -1,36 +1,138 @@
 # Python Tutorials Series
 
-[Args Kwargs](https://github.com/CodingMantras/PythonTutorials/tree/master/args_kwargs)
+## 1. Introduction
 
-[Continue and Break statements](https://github.com/CodingMantras/PythonTutorials/tree/master/continue_and_break)
+- Programming Language
 
-[Dictionary Comprehensions](https://github.com/CodingMantras/PythonTutorials/tree/master/dict_comps)
+- Why Python
 
-[Higher Order Functions](https://github.com/CodingMantras/PythonTutorials/tree/master/higher_order_functions)
+- installing Python
 
-[Input Function](https://github.com/CodingMantras/PythonTutorials/tree/master/input_function)
+- installing code editor
 
-[Join Split Methods](https://github.com/CodingMantras/PythonTutorials/tree/master/join_split_methods)
+- Python Overview
 
-[Lambda Functions](https://github.com/CodingMantras/PythonTutorials/tree/master/lambda_function)
+## 2. Python basics
 
-[Latitude Longitude](https://github.com/CodingMantras/PythonTutorials/tree/master/latitude_longitude)
+- variables
 
-[Len Vs Count Methos](https://github.com/CodingMantras/PythonTutorials/tree/master/len_vs_count)
+- data_types
 
-[List Comprehensions](https://github.com/CodingMantras/PythonTutorials/tree/master/list_comps)
+- strings
 
-[Maps (Folium)](https://github.com/CodingMantras/PythonTutorials/tree/master/maps_folium)
+- lists
 
-[Math Module in Python](https://github.com/CodingMantras/PythonTutorials/tree/master/math_mod)
+- tuples
 
-[Name == Main](https://github.com/CodingMantras/PythonTutorials/tree/master/name_main)
+- dictionaries
 
-[Number Series](https://github.com/CodingMantras/PythonTutorials/tree/master/number_series)
+- if statement
 
-[Ord and Chr methods](https://github.com/CodingMantras/PythonTutorials/tree/master/ord_chr)
+- for loop
 
-[Sort Vs Sorted](https://github.com/CodingMantras/PythonTutorials/tree/master/sort_vs_sorted)
+- input function
 
-[String Tutorials](https://github.com/CodingMantras/PythonTutorials/tree/master/strings_tutorial)
+- while loop
 
+- functions
+
+## 3. Classes and OOP
+
+## 4. Python useful concepts
+
+- args & kwargs
+
+- continue and break statements
+
+- functions as first class objects
+
+- if name == main
+
+- join and split methods
+
+- lambda function
+
+- len and count
+
+- max function
+
+- ord_chr
+
+- sort and sorted
+
+- ternary operators
+
+- zip function
+
+
+## 5. Python Advanced Concepts
+
+- comprehensions
+
+- generators
+
+- decorators
+
+- coroutines
+
+- asyncio
+
+- threading
+
+- multiprocessing
+
+- callable
+
+- ellipsis
+
+- higher order functions
+
+## 6. Python in-built Packages (Most Commonly used Only)
+
+- calendar
+
+- collections
+
+- concurrent
+
+- copy
+
+- csv
+
+- dataclasses
+
+- dis
+
+- enum
+
+- functools
+
+- itertools
+
+- json
+
+- logging
+
+- math
+
+- os
+
+- pathlib
+
+- pickle
+
+- random
+
+- re
+
+- shutil
+
+- socket
+
+- string
+
+- time
+
+- timeit
+
+- typing
