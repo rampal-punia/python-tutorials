@@ -12,7 +12,9 @@ If we summarize this, Python is:
 
 - Powerful & interpreted programming language
 
-- Efficient high-level data structures- effective approach to object-oriented programming
+- Efficient high-level data structures
+
+- Effective approach to object-oriented programming
 
 - Elegant syntax and dynamic typing
 
