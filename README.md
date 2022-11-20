@@ -4,8 +4,8 @@
 
 ||||
 |---------------|----------------|--------------------|
-|i) Programming Languages|ii) Why Python |iii) Installing Python | 
-|iv) Installing code editor| v) **Hello World** program|iv) Syntax, Semantics and PEPs|
+|i) [Programming Languages](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/1_programming_language.md)|ii) [Why Python](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/2_why_python.md) |iii) [Installing Python](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/3_installing_python.md) | 
+|iv) [Installing code editor](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/4_installing_code_editor.md)| v) [**Hello World** program](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/5_hello_world.md)|iv) Syntax, Semantics and PEPs|
 ||||
 
 ## 2. Python basics
