@@ -2,5 +2,17 @@ list1 = [1, 2, 3, 4, 5]
 list2 = ['one', 'two', 'three', 'four', 'five']
 str1 = 'aeiou'
 
-for val1, val2, val3 in zip(list1, list2, str1):
-    print(val1, val2, val3)
+# To get a list
+print(list(zip(list1, list2, str1)))
+
+
+# # Suppose given
+# numbers = [(3, 2), (3, 3), (3, 4), (3, 5)]
+
+# # Required: 3², 3³, 3⁴, 3⁵
+
+# nums, powers = zip(*numbers)
+# print(nums)
+# print(powers)
+
+# print(list(map(pow, nums, powers)))
