@@ -16,6 +16,7 @@
 |iv) Lists     | v) Tuples    | vi) Dictionaries |
 | vii) If statement | viii) Comparison Operators| ix) For loop |
 | x) Input function | xi) While loop | xii) Functions|
+| xiii) Modules |||
 ||||
 
 ## 3. Classes

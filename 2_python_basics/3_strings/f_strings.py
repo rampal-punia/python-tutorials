@@ -9,3 +9,7 @@ age = 30
 # We can put the variables names inside curly brackets.
 print(f"{name=}, {age=}")
 # Output: name='John Doe', age=30
+
+print(f'''{name=},
+         {age=}''')
+# Output: name='John Doe', age=30
