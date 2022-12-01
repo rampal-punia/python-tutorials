@@ -1,6 +1,6 @@
 # Python introduction
 
-Python is an easy-to-learn, object-oriented, and interpreted programming language. Before starting to learn Python programming it is recommended to read:
+Python is an easy-to-learn, object-oriented, and interpreted programming language. Before starting to learn Python programming it is recommended to read and understand the following topics:
 
 - [Programming Languages](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/1_programming_language.md)
 
