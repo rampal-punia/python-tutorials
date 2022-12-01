@@ -103,7 +103,7 @@ def increment_by_5(number):
 
 print(increment_by_5(4))
 ```
-The second and third lines of code are indented by `4 spaces` to denote that it belong to the function `increment_by_5`. whereas the `print` statement is not indented, which denotes it is outside of the function.
+The second and third lines of code are indented by `4 spaces` to denote that it belongs to the function `increment_by_5`. whereas the `print` statement is not indented, which denotes it is outside of the function.
 
 Through out the tutorial, we will have plenty of examples to get used to it. 
 
