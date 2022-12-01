@@ -18,25 +18,26 @@
 # a = [1, 2, 3, 4, 5]     # referencing list
 
 #### Checking the ids of the variable ####
-# language = "Python"
-# print(id(language))     # 140549527402160
+# developer_name = "Rahul"
+# print(id(developer_name))       # 140549527402160
 
-# a = 'Rahul'
-# print(id(a))            # 140118263422000
+# age = 100
+# print(id(age))                  # 9804416
 
-# a = 100
-# print(id(a))            # 9804416
+# experience_in_years = 150.25
+# print(id(experience_in_years))  # 140118263398640
 
-# a = 150.25
-# print(id(a))            # 140118263398640
+# is_on_leave = False
+# print(id(is_on_leave))          # 9486304
 
-# a = [1, 2, 3, 4, 5]
-# print(id(a))            # 140118263381376
+# # But in case of list.
 
 # b = [1, 2, 3, 4, 5]
-# print(id(b))            # 140118263437440
+# print(id(b))                    # 140118263437440
+
+# # if we append the list the id remains same and the list get appended to the same memory location
 # b.append(6)
-# print(id(b))            # 140118263437440
+# print(id(b))                    # 140118263437440
 
 #### Checking the type of the variable ####
 # a = 'Python'
@@ -52,4 +53,4 @@
 # print(type(a))          # <class 'list'>
 
 # Check the type of function type
-print(type(type))         # <class 'type'>
+# print(type(type))         # <class 'type'>

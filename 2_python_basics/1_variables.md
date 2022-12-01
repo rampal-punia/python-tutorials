@@ -13,11 +13,35 @@ is_on_leave = False                 # boolean
 ```
 Here, 👆 `developer_name`, `age`, `experience_in_years`, `programming_language` and `is_on_leave` are a few examples of variables in Python
 
+Check the ids of the variables above
+```python
+developer_name = "Rahul"
+print(id(developer_name))       # 140549527402160
+
+age = 100
+print(id(age))                  # 9804416
+
+experience_in_years = 150.25
+print(id(experience_in_years))  # 140118263398640
+
+is_on_leave = False
+print(id(is_on_leave))          # 9486304
+
+# But in case of list.
+
+b = [1, 2, 3, 4, 5]
+print(id(b))                    # 140118263437440
+
+# if we append the list the id remains same and the list get appended to the same memory location
+b.append(6)
+print(id(b))                    # 140118263437440
+```
+
 ## Dynamic typing nature of Python
 
 Python is called dynamically typed language which means variables are created without type hinting the variable name. Which means variable can reference to any type of object. Therefore, if we do the following, Python does not complain:
 ```python
-a = 'Rahul'             # referencing string
+a = 'Python'             # referencing string
 a = 100                 # referencing int
 a = 150.25              # referencing float
 a = [1, 2, 3, 4, 5]     # referencing list
