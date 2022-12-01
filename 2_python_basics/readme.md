@@ -1,6 +1,6 @@
 # Python Basics
 
-1. Variables
+1. [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/1_variables.md)
 
 2. Built-in data types
 
