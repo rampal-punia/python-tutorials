@@ -116,4 +116,47 @@ From [Python docs](https://peps.python.org/pep-0001/):
 PEP 8 gives coding conventions for the Python code comprising the standard library in the main Python distribution.
 [Read more](https://peps.python.org/pep-0008/)
 
+## 9. The "Zen of Python"
+Originally thought as "The way of Python", "The Zen of Python" is created by Tim Peters on 19 Aug 2004. Tim Peters is one of the legendary Pythoneer often referred to as "Timbot" in the Python community. The Zen of Python is the 19 guiding principles for Python. 
+
+To check these guideline, in a python interpreter type `import this`. You will find these 19 statements as an output to this command.
+
+```python
+import this
+
+# output:
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+```
+
+## 10. Help from python docs
+```python
+# use help() function
+print(help(any_python_object))
+
+# Output: Detailed explanation of that python object from python docs.
+
+# Like for list:
+print(help(list))
+```
+
 

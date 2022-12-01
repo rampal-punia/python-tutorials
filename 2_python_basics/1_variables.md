@@ -27,7 +27,7 @@ print(id(experience_in_years))  # 140118263398640
 is_on_leave = False
 print(id(is_on_leave))          # 9486304
 
-# But in case of list.
+# But in case of a list.
 
 b = [1, 2, 3, 4, 5]
 print(id(b))                    # 140118263437440
