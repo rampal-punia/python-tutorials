@@ -14,4 +14,3 @@ Python is an easy-to-learn, object-oriented, and interpreted programming languag
 
 - [Style and Conventions](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/6_styles_and_conventions.md)
 
-Is it still uploading to python tutorials

@@ -33,6 +33,7 @@ def add(a, b):
 - Cannot start with a number
 - Contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
 - Case-sensitive (name, Name, NAME are different)
+- [Reserved keywords](https://github.com/CodingMantras/python-tutorials/blob/master/1_getting_started/6_styles_and_conventions.md#6-reserved-keywords) should not be used as variable names.
 
 ## 3. Functions and Classes naming
 Function names follow the same convention as variable names.
@@ -90,7 +91,6 @@ The following words are [reserved keywords](https://docs.python.org/3.8/referenc
 |return|and|continue|for|lambda|try|as|
 |def|from|nonlocal|while|assert|del|global|
 |not|with|async|elif|if|or|yield|
-||||||||
 
 ## 7. Code blocks:
 Many other languages uses `{}` to denote a code block. But, Python only uses `indentation` to denote a code block.
