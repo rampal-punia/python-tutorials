@@ -1,7 +1,216 @@
-# Answer these 3 questions about the string.
+# String
 
-# Practical 
-    Given:  A python string
-    To Do:  Write a python program to read
-            the invoice and Calculate 
-            the total amount to be paid.
+Strings in Python are: Texts wrapped in single, double or triple quotes.
+```python
+str1 = "Hello"
+
+str2 = 'John Snow'
+
+str3 = "12345" 
+
+str4 = '_$%""^&*()!-='
+
+str5 = """this is also a string
+expanded in 
+multiple line
+"""
+``` 
+
+## Methods for concatenating strings
+```python
+fname = "John"
+lname = "Doe"
+
+print(fname, lname)
+print(fname + ' ' + lname)
+print("Name: {0} {1}".format(fname, lname))
+print(f"Name: {fname} {lname}")
+```
+
+### With Python > 3.8 we can do:
+```python
+print(f"Name: {fname=} {lname=}")
+# This is called: Self-documenting expression with the '=' character.
+```
+
+## Escape Sequence
+```python
+# How do we print:
+# s = "He said, "I am learning Python Programming language." "
+
+# Method-1: Using combination of single and double quotes.
+s = 'He said, "I am learning Python Programming language." '
+print(s)  # Output: He said, "I am learning Python Programming language."
+
+# Method-2: Using escape character '\'.
+s = "He said, \"I am learning Python Programming language.\" "
+print(s)  # Output: He said, "I am learning Python Programming language."
+```
+
+### How to escape a 'escape character'?
+```python
+# Using two escape characters.
+
+s = "I am learning \\Python Programming\\ language"
+print(s)  # Output: I am learning \Python Programming\ language
+```
+
+## Multiplying strings!
+```python
+s = "Python" * 5
+print(s)
+
+# Output:
+PythonPythonPythonPythonPython
+```
+
+## String slicing
+```python
+# Syntax for string slicing: [start:stop:step]
+
+s = "I am learning Python Programming language"
+
+print(s[0])         # Output: I (first character)
+
+print(s[2])         # Output: a (character at position 2)
+
+print(s[-2])        # Output: g (second last character)
+
+print(s[0:10])      # Output: I am learn
+
+print(s[10:25])     # Output: ing Python Prog
+
+print(s[::2])       # Output: Ia erigPto rgamn agae
+
+# Reverse the string
+print(s[::-1])      # Output: egaugnal gnimmargorP nohtyP gninrael ma I
+```
+
+## Length of string
+```python
+# in-built len() function to calculate the length of the string
+s = "I am learning Python Programming language"
+print(len(s))
+
+# Output:
+41
+```
+ 
+## Strings: Useful methods
+```python
+s = "I am learning Python Programming language"
+
+print(s.capitalize())       
+# Output: I am learning python programming language
+
+print(s.count('o'))
+# Output: 2
+
+print(s.endswith('e'))
+# Output: True
+
+print(s.find('z'))
+# Output: -1
+
+print(s.isdigit())
+# Output: False
+
+print(s.islower())
+# Output: False
+
+print(s.isnumeric())
+# Output: False
+
+print(s.isprintable())
+# Output: True
+
+print(s.lower())
+# Output: i am learning python programming language
+
+print(s.replace('a', 'o'))
+# Output: I om leorning Python Progromming longuoge
+
+print(s.startswith('k'))
+# Output: False
+
+print(s.title())
+# Output: I Am Learning Python Programming Language
+
+print(s.upper())
+# Output: I AM LEARNING PYTHON PROGRAMMING LANGUAGE
+```
+
+## Strings: Output formats
+```python
+# 3 print statements in single line
+# use end=' '
+
+lang1 = "Python"
+lang2 = "Java"
+lang3 = "Ruby"
+
+print(lang1, end=' ')
+print(lang2, end=' ')
+print(lang3)
+
+# Output:
+Python Java Ruby
+```
+
+### New line
+```python
+# Use '\n' to print a new line
+
+s = "I am learning\n Python Programming language"
+print(s)
+
+# Output: 
+I am learning
+ Python Programming language
+```
+### Tab
+```python
+# Use '\t' to print a tab
+
+s = "I am learning\t Python Programming language"
+print(s)
+
+# Output
+I am learning    Python Programming language
+```
+
+### Windows path
+```python
+# Here \n will print a new line
+
+filepath = "C:\dirpath\name_of_file"
+print(filepath)
+
+# Output:
+C: \dirpath
+ame_of_file
+```
+
+Instead use `r` (raw string)
+```python
+# Using raw string by adding 'r' in front of the string
+
+filepath = r"C:\dirpath\name_of_file"
+print(filepath)
+
+# Output:
+C:\dirpath\name_of_file
+```
+
+## String: Get complete list of methods
+```python
+s = "Learning PYTHON"
+print([item for item in dir(s) if not item.startswith('_')])
+
+# Output:
+['capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+```
+
+
+
+
