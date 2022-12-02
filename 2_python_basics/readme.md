@@ -2,9 +2,9 @@
 
 1. [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/1_variables.md)
 
-2. Built-in data types
+2. [Built-in data types](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/2_builtin_datatypes.md)
 
-3. Strings
+3. [Strings](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/3.1_strings.md)
 
 4. Lists
 

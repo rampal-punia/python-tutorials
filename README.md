@@ -12,7 +12,7 @@
 
 ||||
 |---------------|----------------|--------------------|
-|i) [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/1_variables.md) | ii) Built-in data types| iii) Strings |
+|i) [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/1_variables.md) | ii) [Built-in data types](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/2_builtin_datatypes.md)| iii) [Strings](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/3.1_strings.md) |
 |iv) Lists     | v) Tuples    | vi) Dictionaries |
 | vii) If statement | viii) Comparison Operators| ix) For loop |
 | x) Input function | xi) While loop | xii) Functions|
