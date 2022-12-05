@@ -54,3 +54,6 @@
 
 # Check the type of function type
 # print(type(type))         # <class 'type'>
+
+s = "I am learning Python Programming language"
+print(s.split())

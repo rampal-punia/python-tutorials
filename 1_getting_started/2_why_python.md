@@ -1,6 +1,6 @@
 # Why Python?
 
-As we have discussed there are many programming languages out there. So, the question arises, why one should choose to learn Python?
+As we have already discussed, there are many programming languages out there. So, the question arises, why one should choose to learn Python?
 
 According to [Python docs](https://docs.python.org/3/tutorial/index.html):
 
