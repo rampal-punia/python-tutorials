@@ -79,6 +79,21 @@ Even the `type` function is an object of some type. Let's check this:
 print(type(type))       # <class 'type'>
 ```
 
+## More in type()
+```python
+print(type({}))
+# Output: <class 'dict'>
+
+print(type([]))
+# Output: <class 'list'>
+
+print(type(()))
+# Output: <class 'tuple'>
+
+print(type(set()))
+# Output: <class 'set'>
+```
+
 **Like an object's identity, the type is also unchangeable.** 
 
 **Value**: The value of some objects is changed. The objects whose values can be changed are called **mutable**, and the objects whose values can not be changed are called **immutable**. There is a separate tutorial for immutable and mutable data types.

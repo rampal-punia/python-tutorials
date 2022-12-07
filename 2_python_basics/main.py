@@ -55,5 +55,10 @@
 # Check the type of function type
 # print(type(type))         # <class 'type'>
 
-s = "I am learning Python Programming language"
-print(s.split())
+# s = "I am learning Python Programming language"
+# print(s.split())
+
+# print(type({}))
+# print(type([]))
+# print(type(()))
+# print(type(set()))

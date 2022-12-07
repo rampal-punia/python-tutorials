@@ -20,11 +20,13 @@
 
 
 ## 3. Classes
+[Separate repository](https://github.com/CodingMantras/python-class-tutorial) covering Python classes in detail. Following topics are covered in it.
 ||||
 |---------------|----------------|--------------------|
-|i) Introduction to classes | ii) **class** keyword & __init__ method | iii) Attributes and methods| 
-|iv) Instance and class variables | v) Instance, class and static methods| vi) Property decorator| 
-|vii) Abstract Base Class | viii) Class Inheritance| |
+|i) Introduction to classes | ii) Reason for creating a class | iii) **class** keyword & __init__ method|
+|iv) Naming a 'class' | v) Instance of a class  | vi) Attributes and Methods|
+|vii) Instance and class variables | viii) Instance, class and static methods| ix) dir(), help(__class__), MRO, is_instance and __dict__ methods| 
+|x) Use of property decorator | xi) OOPs concepts| |
 
 
 ## 4. Useful Concepts
