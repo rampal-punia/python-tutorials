@@ -2,63 +2,40 @@
 
 ✨ Uncomment, Run and Check the output
 '''
+# # Number representation
+# x = 20          # int
+# print(x)
+# # Output: 20
 
-#### Examples of variables ####
+# x = 20.897      # float
+# print(x)
+# # Output: 20.897
 
-# developer_name = "Rahul"        # string
-# age = 30                        # int
-# experience_in_years = 5.8       # flaot
-# programming_language = "Python"  # string
-# is_on_leave = False             # boolean
+# x = 20 + 8j     # complex number
+# print(x)
+# # Output: (20+8j)
 
-#### Dynamically typing ####
-# a = 'Rahul'             # referencing string
-# a = 100                 # referencing int
-# a = 150.25              # referencing float
-# a = [1, 2, 3, 4, 5]     # referencing list
 
-#### Checking the ids of the variable ####
-# developer_name = "Rahul"
-# print(id(developer_name))       # 140549527402160
+# x = 0b110100    # binary (accepts only 0 and 1 after 0b)
 
-# age = 100
-# print(id(age))                  # 9804416
+# print(x)        # Output: 52
 
-# experience_in_years = 150.25
-# print(id(experience_in_years))  # 140118263398640
+# print(bin(x))   # Output: 0b110100
 
-# is_on_leave = False
-# print(id(is_on_leave))          # 9486304
 
-# # But in case of list.
+# x = 0xef10    # Hexadecimal (accepts only 0-9, and a-f)
+# print(x)        # Output: 61200
 
-# b = [1, 2, 3, 4, 5]
-# print(id(b))                    # 140118263437440
+# print(hex(x))   # Output: 0xef10
+# x = 0o710    # Hexadecimal (accepts only 0-9, and a-f)
+# print(x)        # Output: 456
 
-# # if we append the list the id remains same and the list get appended to the same memory location
-# b.append(6)
-# print(id(b))                    # 140118263437440
+# print(oct(x))   # Output: 0o710
 
-#### Checking the type of the variable ####
-# a = 'Python'
-# print(type(a))          # <class 'str'>
 
-# a = 100
-# print(type(a))          # <class 'int'>
+x = 20
 
-# a = 150.25
-# print(type(a))          # <class 'float'>
+# x = x + 2
 
-# a = [1, 2, 3, 4, 5]
-# print(type(a))          # <class 'list'>
-
-# Check the type of function type
-# print(type(type))         # <class 'type'>
-
-# s = "I am learning Python Programming language"
-# print(s.split())
-
-# print(type({}))
-# print(type([]))
-# print(type(()))
-# print(type(set()))
+# x **= 2
+# print(x)
