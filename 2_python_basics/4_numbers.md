@@ -148,3 +148,44 @@ x %= 2      # Output: 0
 
 x **= 2     # # Output: 400
 ```
+
+## Int: All methods
+
+Using `dir()` method to list all the methods of int.
+
+```python
+print([item for item in dir(y) if not item.startswith('_')])
+
+# Output:
+['as_integer_ratio', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+```
+
+Let's see all the methods one by one:
+
+```python
+x = 56000/100
+print(x.as_integer_ratio())
+
+# Output: (560, 1)
+#--------------------------#
+
+y = 56
+print(y.denominator)
+# Output: 1
+print(y.numerator)
+# Output: 56
+print(y.bit_length())
+# Output: 6
+
+
+z = 56 + 5j
+a = 7
+b = b'\x07\x00'
+print(z.conjugate())
+print(z.imag)
+
+
+print(a.to_bytes(2, 'little'))
+print(int.from_bytes(b, 'little'))
+
+```
