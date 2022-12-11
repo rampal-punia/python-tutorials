@@ -2,19 +2,12 @@
 
 ✨ Uncomment, Run and Check the output
 '''
-# A function that returns two values
+t1 = (1, 2, 3)
+print(id(t1))
 
+t2 = t1[:]
+print(id(t1))
+print(id(t2))
+print(t2)
 
-def my_func():
-    return 2, 3
-
-
-# Unpacking these two values
-print(type(my_func()))
-x, y = my_func()
-print(x)
-print(y)
-
-# Output:
-# 2
-# 3
+print(t2 is t1)

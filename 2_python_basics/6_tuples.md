@@ -165,7 +165,6 @@ A function can return more than one value. These values are comma separated henc
 ```python
 # A function that returns two values
 
-
 def my_func():
     return 2, 3
 
@@ -205,13 +204,39 @@ So, we have discussed that a tuple is immutable, but look at this interesting be
 ```python
 t1 = (1, 2, 3)
 t2 = (4, 5, 6)
-print(id(t1))
 
 t1 += t2
 print(t1)    # Output: (1, 2, 3, 4, 5, 6)
 ```
 
 ### The tuple t1 is mutated here. The `+=` assignment operator calls `__iadd__` method, which is an in-place operator and now the value of t1 is changed in-place from (1, 2, 3) to (1, 2, 3, 4, 5, 6), as we can see the output of the last print statement. So what happened there? How the tuple is mutated? Let's find out
+
+If we check the id() of t1 first and after the merging with t2 we find out that both are different.
+
+```python
+t1 = (1, 2, 3)
+t2 = (4, 5, 6)
+print(id(t1))       # 140600311167616
+
+t1 += t2
+print(t1)    # Output: (1, 2, 3, 4, 5, 6)
+print(id(t1))       # 140600311575552
+```
+
+Therefore the original t1 is not modified but we got the copy of the original tuple.
+
+If we try to copy the tuple with slicing operation, both the variables refer to the same tuple object. For example:
+
+```python
+t1 = (1, 2, 3)
+print(id(t1))       # 139766396087104
+
+t2 = t1[:]
+print(id(t1))       # 139766396087104
+print(id(t2))       # 139766396087104
+
+print(t2 is t1)     # True
+```
 
 ### 2. Using `*list1` + `*list2` (For Python >=3.5)
 

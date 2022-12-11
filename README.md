@@ -64,5 +64,8 @@ Reference:
 
 - [Python official documentation](https://docs.python.org/3/)
 - [Wikipedia](https://www.wikipedia.org/)
+- [StackOverflow](https://stackoverflow.com/)
+- [Fluent Python](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/)
+None of the above is an affiliated link. And let me admit that fluent python is my favorite book on Python and it is almost impossible for me to write about Python without being affected by this book.
 
-Any other specific reference is quoted at the related page.
+All specific references are quoted at the related page.
