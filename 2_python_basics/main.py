@@ -2,6 +2,11 @@
 
 ✨ Uncomment, Run and Check the output
 '''
-t = (2, 3, [4, 5])
-t[2].append(6)
-print(t)
+employee = {
+    'name': 'John Snow',
+    'age': 30,
+    'language': 'Python'
+}
+
+employee.update(name="John Doe")
+print(employee)
