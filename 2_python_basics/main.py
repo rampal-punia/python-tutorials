@@ -2,4 +2,12 @@
 
 ✨ Uncomment, Run and Check the output
 '''
-print(help('if'))
+# Define two variables
+x = 9
+y = 7
+
+# Use the comparison operator to check if x is greater than y
+if x > y:
+    print("x is greater than y")
+else:
+    print("x is less than y")

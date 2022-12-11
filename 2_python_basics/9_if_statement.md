@@ -78,12 +78,6 @@ else:
 # Output: It is a zero(0)
 ```
 
-## Ternary conditional operators
-
-Using a conditional operation in a single line as a switch to get one or another value. Ternary specifically means having three inputs.
-
-Syntax: [on_condition_true] if [condition] else [on_condition_false]
-
 ## using help function of Python to get help
 
 ```python
