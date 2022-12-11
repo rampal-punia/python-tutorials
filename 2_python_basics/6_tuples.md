@@ -266,7 +266,25 @@ print((*t1, *t2))
 
 ## Tuple as records
 
-Tuples as records with no field names.
+Tuples are used as records with no field names. As, a tuple is a sequence of values, they are fixed in size and cannot be modified. Therefore, tuples are often used to represent records, such as a student's name, age, and roll number.
+
+For example:
+
+```python
+# Define a tuple representing a student's name, age and roll_num
+student = ("John", 15, 10)
+
+# Access the values in the tuple using their index
+print(student[0])  # Output: "John"
+print(student[1])  # Output: 15
+print(student[2])  # Output: 10
+
+# You can also unpack the values in the tuple into separate variables
+name, age, roll_num = student
+print(name)         # Output: "John"
+print(age)          # Output: 25
+print(roll_num)     # Output: 10
+```
 
 ## Tuple: All Methods
 
@@ -285,5 +303,14 @@ t[2] += [50, 60]
 
 ## Immutability of Tuples depends
 
-The immutability of a tuple only applies to the references contained in it. References in a tuple cannot be deleted or replaced. But if one of those references points to a mutable object, and that object is changed, then the value
-of the tuple changes.
+The tuple are immutable data structure. Therefore references in a tuple cannot be deleted or replaced. But if one of those references points to a mutable object/data structure, the value of the tuple may change.
+
+For example:
+
+```python
+t = (2, 3, [4, 5])
+t[2].append(6)
+print(t)
+
+# Output: (2, 3, [4, 5, 6])
+```

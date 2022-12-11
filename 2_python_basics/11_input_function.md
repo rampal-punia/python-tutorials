@@ -1,1 +1,1 @@
-# Input Function (Taking input from user)
+# Input Function (Taking input from a user)
