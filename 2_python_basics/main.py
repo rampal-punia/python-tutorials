@@ -3,11 +3,12 @@
 ✨ Uncomment, Run and Check the output
 '''
 # Define two variables
-x = 9
-y = 7
+age = 30
+language = 'PHP'
+languages = ['Python', 'JavaScript', 'Ruby']
 
-# Use the comparison operator to check if x is greater than y
-if x > y:
-    print("x is greater than y")
+# Use the logical operator to check if x is greater than 2 and y is less than 4
+if age > 25 or language in languages:
+    print("Eligible")
 else:
-    print("x is less than y")
+    print("Not Eligible")
