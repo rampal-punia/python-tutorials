@@ -238,14 +238,30 @@ print(id(t2))       # 139766396087104
 print(t2 is t1)     # True
 ```
 
-### 2. Using `*list1` + `*list2` (For Python >=3.5)
+### But if we create two similar tuples from scratch they have different locations in the memory. For example
 
 ```python
-list1 = ['a', 'b', 'c']
-list2 = [4, 5, 6]
+# Use Python Console not Code editor for this
+t1 = (1, 2, 3)
+t2 = (1, 2, 3)
+
+print(id(t1))       # 140142727341568
+print(id(t2))       # 140142727340480
+
+print(t2 is t1)     # False
+print(t2 == t1)     # True
+```
+
+### 2. Using `*tuple1` + `*tuple2` (For Python >=3.5)
+
+```python
+t1 = ('a', 'b', 'c')
+t2 = (4, 5, 6)
 
 # Add the lists together
-print([*list1, *list2])
+print((*t1, *t2))
+
+# Output: ('a', 'b', 'c', 4, 5, 6)
 ```
 
 ## Tuple as records

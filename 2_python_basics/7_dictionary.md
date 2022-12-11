@@ -1,7 +1,6 @@
-''' ✨ Python Dictionary:
-⚡Why 'get method' is better than 'bracket notation []',
-while retrieving the values. '''
+# Dictionaries
 
+```python
 employee = {
     'name': 'John Snow',
     'age': 30,
@@ -19,3 +18,5 @@ print(employee.get("experience_year"))
 # 👉 Further we can provide a default value to be printed,
 # if the key is not found
 print(employee.get("experience_year", "Not found!"))
+
+```

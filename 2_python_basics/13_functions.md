@@ -1,4 +1,5 @@
-# Functions:
+# Functions
+
 Block of codes designed to do one specific job, and can be called whenever required.
 
 ## 3 main steps for writing functions
@@ -30,12 +31,13 @@ print(result)
 ### Arguments can be passed to a function in various ways
 
 #### Positional Arguments
-#### Keywords Arguments
-#### Default Values
 
+#### Keywords Arguments
+
+#### Default Values
 
 ## Returning data
 
-### Simple data 
-### multiple values or values in a datastructure
+### Simple data
 
+### multiple values or values in a datastructure

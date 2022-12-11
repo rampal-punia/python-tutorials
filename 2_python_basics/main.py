@@ -2,12 +2,10 @@
 
 ✨ Uncomment, Run and Check the output
 '''
-t1 = (1, 2, 3)
-print(id(t1))
+t1 = ('a', 'b', 'c')
+t2 = (4, 5, 6)
 
-t2 = t1[:]
-print(id(t1))
-print(id(t2))
-print(t2)
+# Add the lists together
+print((*t1, *t2))
 
-print(t2 is t1)
+# Output: ('a', 'b', 'c', 4, 5, 6)
