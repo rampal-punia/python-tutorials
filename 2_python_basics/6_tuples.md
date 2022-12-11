@@ -25,12 +25,11 @@ vowels = ('a', 'e', 'i', 'o', 'u')
 
 print(vowels)
 # Output: ('a', 'e', 'i', 'o', 'u')
+```
 
-# Note that it is actually the comma which makes a tuple, not the parentheses.
+Note: It is actually the comma which makes a tuple, not the parentheses. It means that it is not the bracket that represents a tuple, but it is the comma between two or more items that tells Python hey, this is a tuple declaration. Check below:
 
-# It is not the bracket that represents a tuple, but it is the comma between
-# two or more items that tells Python hey, this is a tuple declaration. Check below:
-
+```python
 my_tuple = 1, 2, 3
 print(type(my_tuple))
 
@@ -42,18 +41,63 @@ my_tuple = 1,
 print(type(my_tuple))
 
 # Output: <class 'tuple'>
+```
 
-# declaring an empty tuple
+### Declaring an empty tuple
 
-my_tuple = ()
-print(type(my_tuple))
+```python
+my_empty_tuple = ()
+print(type(my_empty_tuple))
 
 # Or
-my_tuple = tuple()
+my_empty_tuple = tuple()
 # Output: <class 'tuple'>
+```
 
-# Nested tuple
+### Using tuple() function to convert a list into tuple
+
+```python
+a_list = [1, 2, 3, 4, 5]
+
+a_tuple = tuple(a_list)
+print(a_tuple)
+# Output: (1, 2, 3, 4, 5)
+```
+
+### Declaring a nested tuple
+
+```python
 my_nested_tuple = ((1, 2), (3, 4))
+```
+
+## Creating a tuple
+
+### Using range() function
+
+```python
+my_tuple = tuple(item for item in range(1, 100))
+print(my_tuple)
+
+# Output: (1, 2, 3, 4, ..., 99, 100)
+```
+
+Note: Using the bracket notation only (without the tuple()) will give a generator object not a tuple. For example:
+
+```python
+my_tuple = (item for item in range(1, 100))
+print(my_tuple)
+
+# Output: <generator object <genexpr> at 0x7fd43cae0b30>
+```
+
+### Using multiplication
+
+```python
+my_tuple = (1, 2) * 5
+print(my_tuple)
+
+# Output: (1, 2, 1, 2, 1, 2, 1, 2, 1, 2)
+
 ```
 
 ## Tuple indexing
@@ -74,6 +118,69 @@ print(first_element)
 # Last element (5)
 first_element = my_tuple[-1]
 print(first_element)
+```
+
+## Tuples can not be Modified
+
+If we try to modify the tuple we get a `TypeError`. For example:
+
+```python
+my_tuple = (1, 2, 3, 4, 5)
+
+# Modify first element from 1 to 10
+my_tuple[0] = 10
+print(my_tuple)
+
+# Output: TypeError: 'tuple' object does not support item assignment
+```
+
+## Tuple unpacking
+
+```python
+my_tuple = (1, 2, 3)
+
+first, second, third = my_tuple
+print(first, second, third)
+# Output: 1 2 3
+
+# The number of variables must be equal to the elements in a tuple
+# or we get an error(TypeError).
+my_tuple = (1, 2, 3, 4, 5)
+first, second, third = my_tuple
+print(first, second, third)
+
+# Output: ValueError: too many values to unpack (expected 3)
+
+# Use `*` in this situation
+ first, *middle, last = my_tuple
+print(first)    # 1
+print(middle)   # [2, 3, 4]
+print(last)     # 5
+```
+
+## Getting two or more outputs from a function
+
+A function can return more than one value. These values are comma separated hence by default they are treated as a tuple.
+
+```python
+# A function that returns two values
+
+
+def my_func():
+    return 2, 3
+
+# Check the type of the output, It is tuple.
+print(type(my_func()))
+# Output: <class 'tuple'>
+
+# Unpacking these two values
+x, y = my_func()
+print(x)
+print(y)
+
+# Output:
+2
+3
 ```
 
 ## Tuple Concatenation (Adding tuples)
@@ -115,8 +222,6 @@ list2 = [4, 5, 6]
 # Add the lists together
 print([*list1, *list2])
 ```
-
-## Can not modified tuple
 
 ## Tuple as records
 

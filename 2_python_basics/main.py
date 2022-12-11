@@ -2,14 +2,19 @@
 
 ✨ Uncomment, Run and Check the output
 '''
-my_tuple = (1, 2, 3, 4, 5)
+# A function that returns two values
 
-# First element (1)
-first_element = my_tuple[0]
-print(first_element)
-# Second element (2)
-first_element = my_tuple[1]
-print(first_element)
-# Last element (5)
-first_element = my_tuple[-1]
-print(first_element)
+
+def my_func():
+    return 2, 3
+
+
+# Unpacking these two values
+print(type(my_func()))
+x, y = my_func()
+print(x)
+print(y)
+
+# Output:
+# 2
+# 3
