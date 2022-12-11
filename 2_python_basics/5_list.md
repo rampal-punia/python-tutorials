@@ -142,7 +142,7 @@ print(alternate)
 
 ## List Concatenation (Adding lists)
 
-Here are few example sof adding lists in Python:
+Here are few examples of adding lists in Python:
 
 ### 1. Using `+` operator
 
@@ -160,6 +160,7 @@ print(new_list)  # Output: ['a', 'b', 'c', 4, 5, 6]
 list1 += list2
 print(list1)    # Output: ['a', 'b', 'c', 4, 5, 6]
 #Note: this operation is in-place and calls __iadd__ method.
+# __iadd__ mutates the original list(in-place), whereas __add__ returns a new list.
 ```
 
 ### 2. Using append method
