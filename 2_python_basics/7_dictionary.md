@@ -186,6 +186,65 @@ print(employee)
 # {'name': 'John Snow', 'language': 'Python'}
 ```
 
+## Adding two dictionaries
+
+```python
+d1 = {"name": "John", "age": 25, "is_active": False}
+d2 = {"contact": 12345678, "language": "Python", "experience": 12}
+
+# Method -1 : Using update()
+
+d1.update(d2)
+print(d1)
+
+# Output
+# {'name': 'John', 'age': 25, 'is_active': False 'contact': 12345678, 'language': 'Python', 'experience': 12}
+
+# Method -2: Using **arguments (For Python >= 3.5 )
+print({**d1, **d2})
+
+# Output
+# {'name': 'John', 'age': 25, 'is_active': False 'contact': 12345678, 'language': 'Python', 'experience': 12}
+
+# Method - 3: Using for loop
+d3 = dict()
+
+for d in (d1, d2):
+    d3.update(d)
+
+print(d3)
+# Output
+# {'name': 'John', 'age': 25, 'is_active': False 'contact': 12345678, 'language': 'Python', 'experience': 12}
+
+# Method - 4: using chain from itertools
+from itertools import chain
+d3 = dict(chain.from_iterable(d.items() for d in (d1, d2)))
+print(d3)
+# Output
+# {'name': 'John', 'age': 25, 'is_active': False 'contact': 12345678, 'language': 'Python', 'experience': 12}
+
+# Method - 5: using pipe(|) character (For Python >= 3.9.0, PEP-584)
+d3 = d1 | d2
+print(d3)
+# Output
+# {'name': 'John', 'age': 25, 'is_active': False 'contact': 12345678, 'language': 'Python', 'experience': 12}
+```
+
+Note: If a key is present in both of the dictionary, the later one will overwrite the first one.
+
+For example:
+
+```python
+d1 = {"name": "John", "age": 25, "is_active": False}
+d2 = {"age": 35, "language": "Python", "experience": 12}
+
+d3 = {**d1, **d2}
+
+print(d3)
+# Output:
+# {'name': 'John', 'age': 35, 'is_active': False, 'language': 'Python', 'experience': 12}
+```
+
 ## Looping Over a dictionary(for loop tutorial link)
 
 ## Dictionary: All methods
