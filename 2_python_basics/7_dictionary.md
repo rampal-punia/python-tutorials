@@ -250,13 +250,7 @@ print(d3)
 ## Dictionary: All methods
 
 ```python
-employee = {
-    'name': 'John Snow',
-    'age': 30,
-    'language': 'Python'
-}
-
-print([item for item in dir(employee) if not item.startswith('_')])
+print([item for item in dir(dict) if not item.startswith('_')])
 # Output
 ['clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
 ```

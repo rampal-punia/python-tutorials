@@ -299,7 +299,7 @@ print(roll_num)     # Output: 10
 ## Tuple: All Methods
 
 ```python
-print([item for item in dir(my_tuple) if not item.startswith('_')])
+print([item for item in dir(tuple) if not item.startswith('_')])
 
 # Output: ['count', 'index']
 ```

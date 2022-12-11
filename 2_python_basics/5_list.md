@@ -502,8 +502,7 @@ Here, the list contains three elements, but we are only trying to unpack the ele
 ```python
 # Print a list of methods used to operate on lists.
 # We will use the in-built dir() method for this task.
-numbers = [1, 2, 3, 4, 5]
-print([item for item in dir(numbers) if not item.startswith('_')])
+print([item for item in dir(list) if not item.startswith('_')])
 
 ['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
 ```
