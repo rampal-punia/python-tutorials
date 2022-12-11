@@ -2,9 +2,9 @@
 
 Note:- If you are on Linux, chances are you already have a version of Python pre-installed. You can always download the newer version.
 
-## Download Python Version for your OS.
+## Download Python Version for your OS
 
-- Visit Python [official website](https://www.python.org/).
+- Visit Python's [official website](https://www.python.org/).
 
 - If you are on Windows; Under Downloads tab click 'Download Python <version_name> button. Or click 'All Releases'.
 
@@ -12,7 +12,8 @@ Note:- If you are on Linux, chances are you already have a version of Python pre
 
 ## Installation
 
-### Linux:
+### Linux
+
 ```bash
 $ sudo apt-get update
 $ sudo apt-get install python3 # Or use
@@ -23,12 +24,13 @@ $ sudo apt-get install python3-dev python3-pip
 
 pip3 install virtualenv
 ```
+
 ### macOS
 
 - Install Brew
 
 ```bash
-$ brew install python3
+brew install python3
 ```
 
 ### Windows

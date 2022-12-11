@@ -22,7 +22,7 @@ If we summarize this, Python is:
 
 - Useful in various domains on most platforms
 
-## In addition to that:
+## In addition to that
 
 ### 7 reasons why Python is beginner's friendly
 
@@ -40,19 +40,17 @@ If we summarize this, Python is:
 
 7. Strongly covers a variety of fields
 
-
-### Domains/Fields where Python is Useful:
+### Domains/Fields where Python is Useful
 
 ⚡ Software Development
 ⚡ Web Development
-⚡ Game Development
+⚡ Games Automation
 ⚡ Desktop GUI Development
 ⚡ Tasks automation
-⚡ Data analysis and Visualization
+⚡ Data Analysis and Visualization
 ⚡ Predictive Analysis
 ⚡ Statistics
 ⚡ Data Science
 ⚡ Organizing Finances
-⚡ ArtificialIntelligence / Machine Learning / Deep Learning
+⚡ Artificial Intelligence / Machine Learning / Deep Learning
 ⚡ Audio and Video Applications
-

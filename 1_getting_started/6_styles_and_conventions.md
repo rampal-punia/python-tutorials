@@ -1,11 +1,13 @@
 # Styles and Conventions
 
-Python is an interpreted language. It has it's set of rules and grammar, just like any other language.
+Python is an interpreted language. It has its set of rules and grammar, just like any other language.
 
 Let's check them one by one.
 
 ## 1. Comments
+
 A single line comment starts with `#`.
+
 ```python
 # This is a comment
 
@@ -13,6 +15,7 @@ a = b + 5   # This is an inline comment.
 ```
 
 For documenting a Python function, class or module use triple quotes. `""" """`
+
 ```python
 def add(a, b):
     """A function to add two variables.
@@ -29,6 +32,7 @@ def add(a, b):
 ```
 
 ## 2. Variables naming
+
 - Start with a letter or the underscore character
 - Cannot start with a number
 - Contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
@@ -36,6 +40,7 @@ def add(a, b):
 - [Reserved keywords](https://github.com/CodingMantras/python-tutorials/blob/master/1_getting_started/6_styles_and_conventions.md#6-reserved-keywords) should not be used as variable names.
 
 ## 3. Functions and Classes naming
+
 Function names follow the same convention as variable names.
 
 Function names should be lowercase, with words separated by underscores as necessary to improve readability.
@@ -46,7 +51,9 @@ def calculate_area(radius):
 ```
 
 ## 4. Code continuation in next line
+
 Using `\` to denote the code continuation to the next line.
+
 ```python
 result = first_number + \
         second_number + \
@@ -62,9 +69,11 @@ a_long_list = ['A', 'quick', 'brown', 'fox',
 ```
 
 ## 5. Dunder methods
-The name **dunder** derived from double underscore. In Python the Special methods are covered with double underscore. like `__str__`, `__dict__`, `__add__`, `__init__`.
 
-Use python inbuilt method `dir()` to find out the list of all the double underscore methods for any python object.
+The name **dunder** is derived from double underscore. In Python, the Special methods are covered with double underscore. like `__str__`, `__dict__`, `__add__`, `__init__`.
+
+Use the Python inbuilt method `dir()` to find out the list of all the double underscore methods for any python object.
+
 ```python
 a_list = [1, 2, 3]
 print(dir(a_list))
@@ -82,6 +91,7 @@ print(only_dunder)
 ```
 
 ## 6. Reserved keywords
+
 The following words are [reserved keywords](https://docs.python.org/3.8/reference/lexical_analysis.html#keywords) in Python programming language:
 
 ||||||||
@@ -92,10 +102,12 @@ The following words are [reserved keywords](https://docs.python.org/3.8/referenc
 |def|from|nonlocal|while|assert|del|global|
 |not|with|async|elif|if|or|yield|
 
-## 7. Code blocks:
-Many other languages uses `{}` to denote a code block. But, Python only uses `indentation` to denote a code block.
+## 7. Code blocks
+
+Many other languages use `{}` to denote a code block. But, Python only uses `indentation` to denote a code block.
 
 In the function below:
+
 ```python
 def increment_by_5(number):
     number = number + 5
@@ -103,13 +115,15 @@ def increment_by_5(number):
 
 print(increment_by_5(4))
 ```
+
 The second and third lines of code are indented by `4 spaces` to denote that it belongs to the function `increment_by_5`. whereas the `print` statement is not indented, which denotes it is outside of the function.
 
-Through out the tutorial, we will have plenty of examples to get used to it. 
+Through out the tutorial, we will have plenty of examples to get used to it.
 
 print(increment_by_5(4))
 
 ## 8. PEP 8 – Style Guide for Python Code
+
 From [Python docs](https://peps.python.org/pep-0001/):
 > PEPs (Python Enhancement Proposals) are a design document providing information to the Python community, or describing a new feature for Python or its processes or environment. The PEP should provide a concise technical specification of the feature and a rationale for the feature.
 
@@ -117,7 +131,8 @@ PEP 8 gives coding conventions for the Python code comprising the standard libra
 [Read more](https://peps.python.org/pep-0008/)
 
 ## 9. The "Zen of Python"
-Originally thought as "The way of Python", "The Zen of Python" is created by Tim Peters on 19 Aug 2004. Tim Peters is one of the legendary Pythoneer often referred to as "Timbot" in the Python community. The Zen of Python is the 19 guiding principles for Python. 
+
+Originally thought as "The way of Python", "The Zen of Python" is created by Tim Peters on 19 Aug 2004. Tim Peters is one of the legendary Pythoneer often referred to as "Timbot" in the Python community. The Zen of Python is the 19 guiding principles for Python.
 
 To check these guideline, in a python interpreter type `import this`. You will find these 19 statements as an output to this command.
 
@@ -149,6 +164,7 @@ Namespaces are one honking great idea -- let's do more of those!
 ```
 
 ## 10. Help from python docs
+
 ```python
 # use help() function
 print(help(any_python_object))
@@ -158,5 +174,3 @@ print(help(any_python_object))
 # Like for list:
 print(help(list))
 ```
-
-
