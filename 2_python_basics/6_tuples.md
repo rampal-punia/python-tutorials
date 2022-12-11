@@ -64,15 +64,15 @@ print(a_tuple)
 # Output: (1, 2, 3, 4, 5)
 ```
 
-### Declaring a nested tuple
+### Declaring a Nested Tuple
 
 ```python
 my_nested_tuple = ((1, 2), (3, 4))
 ```
 
-## Creating a tuple
+## Quickly Creating a Tuple
 
-### Using range() function
+### Using range() Function
 
 ```python
 my_tuple = tuple(item for item in range(1, 100))
@@ -81,7 +81,9 @@ print(my_tuple)
 # Output: (1, 2, 3, 4, ..., 99, 100)
 ```
 
-Note: Using the bracket notation only (without the tuple()) will give a generator object not a tuple. For example:
+Note: Using the bracket notation only (without the tuple()) will give a generator object and not a tuple.
+
+For example:
 
 ```python
 my_tuple = (item for item in range(1, 100))
@@ -90,7 +92,7 @@ print(my_tuple)
 # Output: <generator object <genexpr> at 0x7fd43cae0b30>
 ```
 
-### Using multiplication
+### Using Multiplication
 
 ```python
 my_tuple = (1, 2) * 5
@@ -100,7 +102,7 @@ print(my_tuple)
 
 ```
 
-## Tuple indexing
+## Tuple Indexing
 
 We can access the items of a tuple by their index.
 
@@ -134,7 +136,7 @@ print(my_tuple)
 # Output: TypeError: 'tuple' object does not support item assignment
 ```
 
-## Tuple unpacking
+## Tuple Unpacking
 
 ```python
 my_tuple = (1, 2, 3)
@@ -150,9 +152,17 @@ first, second, third = my_tuple
 print(first, second, third)
 
 # Output: ValueError: too many values to unpack (expected 3)
+```
 
-# Use `*` in this situation
- first, *middle, last = my_tuple
+Use `*` in this situation, it will accumulate the rest of the items.
+
+For example:
+
+```python
+my_tuple = (1, 2, 3, 4, 5)
+
+first, *middle, last = my_tuple
+
 print(first)    # 1
 print(middle)   # [2, 3, 4]
 print(last)     # 5
@@ -168,7 +178,7 @@ A function can return more than one value. These values are comma separated henc
 def my_func():
     return 2, 3
 
-# Check the type of the output, It is tuple.
+# Check the type of the output. It is a tuple.
 print(type(my_func()))
 # Output: <class 'tuple'>
 
@@ -209,7 +219,7 @@ t1 += t2
 print(t1)    # Output: (1, 2, 3, 4, 5, 6)
 ```
 
-### The tuple t1 is mutated here. The `+=` assignment operator calls `__iadd__` method, which is an in-place operator and now the value of t1 is changed in-place from (1, 2, 3) to (1, 2, 3, 4, 5, 6), as we can see the output of the last print statement. So what happened there? How the tuple is mutated? Let's find out
+#### The tuple t1 is mutated here. The `+=` assignment operator calls `__iadd__` method, which is an in-place operator and now the value of t1 is changed in-place from (1, 2, 3) to (1, 2, 3, 4, 5, 6), as we can see the output of the last print statement. So what happened there? How the tuple is mutated? Let's find out
 
 If we check the id() of t1 first and after the merging with t2 we find out that both are different.
 
@@ -225,7 +235,7 @@ print(id(t1))       # 140600311575552
 
 Therefore the original t1 is not modified but we got the copy of the original tuple.
 
-If we try to copy the tuple with slicing operation, both the variables refer to the same tuple object. For example:
+But interestingly, if we try to copy the tuple with slicing operation, both the variables refer to the same tuple object. For example:
 
 ```python
 t1 = (1, 2, 3)
@@ -238,7 +248,7 @@ print(id(t2))       # 139766396087104
 print(t2 is t1)     # True
 ```
 
-### But if we create two similar tuples from scratch they have different locations in the memory. For example
+#### And if we create two similar tuples from scratch they have different locations in the memory. For example
 
 ```python
 # Use Python Console not Code editor for this
@@ -314,3 +324,5 @@ print(t)
 
 # Output: (2, 3, [4, 5, 6])
 ```
+
+So, we can see here, the tuple `t` is mutated. The reason behind this is; `t[2]` refers to a mutable list object. Therefore we are changing the list object which is refereed by the `t[2]`.
