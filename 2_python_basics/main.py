@@ -2,10 +2,25 @@
 
 ✨ Uncomment, Run and Check the output
 '''
-selected_number = 11
-user_guess = 0
+# Prompt user to enter their age. Convert the string into integer, using int()
+# age = int(input("Enter your age: "))
+# print(f"You will be {age+10} years old after 10 years.")
 
-while user_guess != selected_number:
-    user_guess = int(input("Guess a number: "))
+# Use str.isdigit().
+# This method returns True if all characters in the string are digits.
+# age = (input("Enter your age: "))
 
-print("Correct!")
+# if age.isdigit():
+#     age = int(age)
+#     print(f"You will be {age+10} years old after 10 years.")
+# else:
+#     print("Invalid input")
+
+# Use try-except block
+age = (input("Enter your age: "))
+
+try:
+    age = int(age)
+    print(f"You will be {age+10} years old after 10 years.")
+except Exception as ex:
+    print("[ERROR]", ex)
