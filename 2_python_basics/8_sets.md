@@ -16,6 +16,15 @@ unique = set(duplicate_list)
 print(unique)
 
 # Output: {1, 2, 3}
+
+# It works on a string also
+duplicate_letters = "Python sets are awesome!"
+
+# Convert the duplicate items list to unique items set using set() method.
+unique = set(duplicate_letters)
+print(unique)
+
+# Output: {'o', ' ', 'a', 's', 'n', 'P', 'm', 'w', '!', 'h', 'r', 'e', 't', 'y'}
 ```
 
 ### Declaring an empty set

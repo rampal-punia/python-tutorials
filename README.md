@@ -13,9 +13,10 @@
 |---------------|----------------|--------------------|
 |i) [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/1_variables.md) | ii) [Built-in data types](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/2_builtin_datatypes.md)| iii) [Strings](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/3.1_strings.md) |
 |iv) [Numbers](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/4_numbers.md)| v) List    | vi) Tuple |
-|vii) Dictionary | viii) If statement | ix) Comparison Operators|
-|x) For loop | xi) Input function | xii) While loop |
-|xiii) Functions| xiv) Modules ||
+|vii) Dictionary | viii) Sets |ix) If-statement |
+|x) Comparison Operators|xi) Logical operators|xii) For loop |
+|xiii) While loop |xiv) Input function | xv) Functions|
+|xvi) Modules |||
 ||||
 
 ## 3. Classes
