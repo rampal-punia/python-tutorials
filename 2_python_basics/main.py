@@ -2,6 +2,10 @@
 
 ✨ Uncomment, Run and Check the output
 '''
-basket = ['orange', 'apple', 'pear', 'orange', 'banana']
-for fruit in sorted(basket):
-    print(fruit.capitalize())
+selected_number = 11
+user_guess = 0
+
+while user_guess != selected_number:
+    user_guess = int(input("Guess a number: "))
+
+print("Correct!")

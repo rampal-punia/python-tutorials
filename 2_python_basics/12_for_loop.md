@@ -24,18 +24,6 @@ word = 'abracadabra'
 for letter in word:
     print(letter)
 
-# Output:
-a
-b
-r
-a
-c
-a
-d
-a
-b
-r
-a
 ```
 
 ## For loop: Lists
@@ -119,14 +107,10 @@ Iterating over a reversed list:
 
 ```python
 for i in reversed(range(1, 10, 2)):
-    print(i)
+    print(i, end=' ')
 
 # Output:
-9
-7
-5
-3
-1
+9 7 5 3 1
 ```
 
 Iterating on a list after sorting the elements:
