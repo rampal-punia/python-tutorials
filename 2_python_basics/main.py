@@ -4,9 +4,14 @@
 '''
 
 
-def greeting(name, age):
-    return f"Hello {name}, you are {age} years old."
+def divide(a, b):
+    quotient = a // b
+    remainder = a % b
+    fraction_result = a/b
+    return quotient, remainder, fraction_result
 
 
-greet = greeting(age=12, name="John")
-print(greet)
+results = divide(11, 4)
+print(results)
+
+# Output: fraction_result
