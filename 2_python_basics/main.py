@@ -4,18 +4,9 @@
 '''
 
 
-def addition(num1, num2):
-    """A function to add two numbers.
-
-    Args:
-        num1 (int): any number
-        num2 (int): any number
-
-    Returns:
-        int: sum of the two numbers
-    """
-    return num1 + num2
+def greeting(name, age):
+    return f"Hello {name}, you are {age} years old."
 
 
-result = addition(3, 5)
-print(result)
+greet = greeting(age=12, name="John")
+print(greet)
