@@ -198,3 +198,63 @@ print(results)
 
 # Output: (2, 3, 2.75)
 ```
+
+## New with Python>=3.8
+
+Python 3.8 improved the way parameters are placed in Python function definitions. It introduced a new syntax, `/`, for specifying positional-only parameters. (Refer: [PEP 570](https://peps.python.org/pep-0570/)).
+
+- Note: The below references are directly from the Python documentations and Pep 570.
+
+```python
+def name(positional_only_parameters, /, positional_or_keyword_parameters, *, keyword_only_parameters):
+    ...
+```
+
+The following would apply:
+
+- All parameters left of the / are treated as positional-only.
+
+- If `/` is not specified in the function definition, that function does not accept any positional-only arguments.
+
+- The logic around optional values for positional-only parameters remains the same as for positional-or-keyword parameters.
+
+- Once a positional-only parameter is specified with a default, the following positional-only and positional-or-keyword parameters need to have defaults as well.
+
+- Positional-only parameters which do not have default values are required positional-only parameters.
+
+### Therefore, the following would be valid function definitions
+
+```python
+def name(p1, p2, /, p_or_kw, *, kw):
+def name(p1, p2=None, /, p_or_kw=None,*, kw):
+def name(p1, p2=None, /, *, kw):
+def name(p1, p2=None, /):
+def name(p1, p2, /, p_or_kw):
+def name(p1, p2, /):
+```
+
+The following would be valid function definitions:
+
+```python
+def name(p_or_kw, *, kw):
+def name(*, kw):
+```
+
+While the following would be invalid:
+
+```python
+def name(p1, p2=None, /, p_or_kw, *, kw):
+def name(p1=None, p2, /, p_or_kw=None,*, kw):
+def name(p1=None, p2, /):
+```
+
+A function definition may look like:
+
+```bash
+def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+      -----------    ----------     ----------
+        |             |                  |
+        |        Positional or keyword   |
+        |                                - Keyword only
+         -- Positional only
+```
