@@ -12,11 +12,11 @@
 ||||
 |---------------|----------------|--------------------|
 |i) [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/1_variables.md) | ii) [Built-in data types](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/2_builtin_datatypes.md)| iii) [Strings](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/3.1_strings.md) |
-|iv) [Numbers](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/4_numbers.md)| v) List    | vi) Tuple |
-|vii) Dictionary | viii) Sets |ix) If-statement |
-|x) Comparison Operators|xi) Logical operators|xii) For loop |
-|xiii) While loop |xiv) Input function | xv) Functions|
-|xvi) Modules |||
+|iv) [Numbers](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/4_numbers.md)| v) [List](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/5_list.md)    | vi) [Tuple](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/6_tuples.md) |
+|vii) [Dictionary](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/7_dictionary.md) | viii) [Sets](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/8_sets.md) |ix) [If-statement](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/9_if_statement.md) |
+|x) [Comparison Operators](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/10_comparison_operators.md)|xi) [Logical operators](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/11_logical_operators.md)|xii) [For loop](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/12_for_loop.md) |
+|xiii) [While loop](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/13_while_loop.md) |xiv) [Input function](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/14_input_function.md) | xv) [Functions](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/15_functions.md)|
+|xvi) [Modules](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/16_modules.md) |||
 ||||
 
 ## 3. Classes
