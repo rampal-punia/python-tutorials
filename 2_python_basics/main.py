@@ -4,4 +4,5 @@
 '''
 
 
-print(help(pow))
+def sum():
+    pass

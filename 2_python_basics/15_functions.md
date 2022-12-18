@@ -258,3 +258,29 @@ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
         |                                - Keyword only
          -- Positional only
 ```
+
+Function Examples:
+Consider the following example function definitions paying close attention to the markers / and *:
+
+```python
+def standard_arg(arg):
+    print(arg)
+
+def pos_only_arg(arg, /):
+    print(arg)
+
+def kwd_only_arg(*, arg):
+    print(arg)
+
+def combined_example(pos_only, /, standard,*, kwd_only):
+    print(pos_only, standard, kwd_only)
+```
+
+Recap:
+
+```python
+The use case will determine which parameters to use in the function definition:
+
+def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+    ...
+```
