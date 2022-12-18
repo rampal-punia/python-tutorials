@@ -41,7 +41,7 @@ print(id(b))                    # 140118263437440
 
 ## Dynamic typing nature of Python
 
-Python is called dynamically typed language which means variables are created without type hinting the variable name. Which means variable can reference to any type of object. Therefore, if we do the following, Python does not complain:
+Python is called a dynamically typed language which means variables are created without type hinting the variable name. This means variables can reference any type of object. Therefore, if we do the following, Python does not complain:
 
 ```python
 a = 'Python'             # referencing string
@@ -54,9 +54,9 @@ Python creates the variable whenever we assign any type of object to it. We read
 
 ## Id, Type and Values
 
-In Python everything is an object and every object have identity, value and a type.
+In Python, everything is an object and every object has an identity, value and type.
 
-**ID**: An id is the object's address in the memory and it never changes once it is created. Use in-built function `id()` to check the identity of any object. It returns an integer.
+**ID**: An id is the object's address in the memory and it never changes once it is created. Use the in-built function id() to check the identity of any object. It returns an integer.
 
 ```python
 language = "Python"
