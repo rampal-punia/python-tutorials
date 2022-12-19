@@ -14,7 +14,9 @@ A single line comment starts with `#`.
 a = b + 5   # This is an inline comment. 
 ```
 
-For documenting a Python function, class or module use triple quotes. `""" """`
+### Multiline comments
+
+Wrap lines in triple quotes  `""" """` for multiline comments. In Python, we use triple quotes for documenting a Python function, class or module also.
 
 ```python
 def add(a, b):
