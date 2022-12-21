@@ -1,12 +1,10 @@
 # Styles and Conventions
 
-Python is an interpreted language. It has its set of rules and grammar, just like any other language.
+Python is an easy-to-learn and interpreted programming language. It has its own set of rules and grammar, just like any other language. Let's check these rules one by one.
 
-Let's check them one by one.
+## 1. Comment
 
-## 1. Comments
-
-A single line comment starts with `#`.
+A single-line comment starts with `#`.
 
 ```python
 # This is a comment
@@ -45,16 +43,24 @@ def add(a, b):
 
 Function names follow the same convention as variable names.
 
-Function names should be lowercase, with words separated by underscores as necessary to improve readability.
+Function names should be lowercase, with words separated by underscores as necessary to improve readability. Function names should be self-explanatory.
 
 ```python
 def calculate_area(radius):
     ...
 ```
 
+For naming a Python class use upper-camel-cases(Pascal case) where all words first letter is uppercase, like: Person, CalculateTax, AccountEmployee etc
+
+```python
+
+class Person:
+    ...
+```
+
 ## 4. Code continuation in next line
 
-Using `\` to denote the code continuation to the next line.
+Use `\` to denote the code continuation to the next line.
 
 ```python
 result = first_number + \

@@ -1,12 +1,13 @@
 # Single line, small and anonymous functions.
 
 
-# def multiply(a, b):
-#     result = a * b
-#     return result
+result = (lambda a, b: a * b)(3, 4)
+print(result)
 
+# print((lambda a, b: a * b)(3, 4))
 
-# result = multiply(3, 4)
-# print(result)
+word = "Python"
+ord_values = [(letter, ord(letter)) for letter in word]
+print(ord_values)
 
-print((lambda a, b: a * b)(3, 4))
+print(list(filter(lambda x: ord(x) > 110, word)))
