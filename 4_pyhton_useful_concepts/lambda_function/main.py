@@ -1,13 +1,6 @@
 # Single line, small and anonymous functions.
 
 
-result = (lambda a, b: a * b)(3, 4)
-print(result)
-
-# print((lambda a, b: a * b)(3, 4))
-
-word = "Python"
-ord_values = [(letter, ord(letter)) for letter in word]
-print(ord_values)
-
-print(list(filter(lambda x: ord(x) > 110, word)))
+# Sort the list according to the last character of the name.
+names = ['Dane', 'Albert', 'Jack', 'Oberon', 'Richard']
+print(sorted(names, key=lambda x: x[-1]))

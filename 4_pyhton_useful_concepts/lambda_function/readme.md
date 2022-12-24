@@ -51,11 +51,11 @@ result = (lambda a, b: a * b)(3, 4)
 print(result)
 ```
 
-Lambda functions are often used as arguments to the Python's higher-order functions. Higher order functions are the functions that take in other functions as arguments.
+Lambda functions are often used as arguments for Python's higher-order functions. Higher-order functions are the functions that take in other functions as arguments.
 
 ## Using `filter function` with lambda
 
-Suppose we want to filter the characters in a word where the Unicode code value of the character is more than '110'. We will use `filter()` function here, and pass the lambda function as a first argument and the word(any iterable, in this case string) to the filter function.
+Suppose we want to filter the characters in a word where the Unicode code value of the character is more than '110'. We will use the filter() function here, and pass the lambda function as a first argument and the word(any iterable, in this case, string) to the filter function.
 
 ```python
 # Define a word
@@ -71,9 +71,9 @@ print(list(filter(lambda x: ord(x) > 110, word)))
 # Output: ['y', 't', 'o']
 ```
 
-The filter function in Python takes in a function and a list as arguments, and returns a new list that contains only the elements from the original list for which the condition of the filter function returned True.
+The filter function in Python takes in a function and a list as arguments and returns a new list that contains only the elements from the original list for which the condition of the filter function returned True.
 
-Let's check another example, where we filter the odd numbers only from a list of numbers using filter and `lambda function`.
+Let's check another example, where we filter the odd numbers only from a list of numbers using the filter and `lambda function`.
 
 ```python
 # Define a list
@@ -86,7 +86,7 @@ print(odd_num_list)
 # Output: [569, 2541, 889, 997, 325]
 ```
 
-## Using `map function` with lambda
+## Using the `map function` with lambda
 
 Suppose we need to convert each number of a list into its square. We will use another higher order function `map()` for this task.
 
@@ -97,6 +97,19 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # Using 'map function' to map each element of the list to its power using lambda function.
 print(list(map(lambda num: pow(num, 2), numbers)))
 # Output: [1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+## Using with `sorted()` function
+
+The lambda functions has the ability to work with more complex data structures and algorithms. We might use a lambda function as the key parameter in the `sorted function` to specify how the elements of a list should be sorted.
+
+```python
+# Sort the list according to the last character of the name
+
+names = ['Dane', 'Albert', 'Jack', 'Oberon', 'Richard']
+print(sorted(names, key=lambda x: x[-1]))
+
+# Output: ['Richard', 'Dane', 'Jack', 'Oberon', 'Albert']
 ```
 
 ## Advantages and disadvantages of Lambda functions
