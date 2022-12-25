@@ -2,12 +2,6 @@
 
 In Python, the `sort()` method and the `sorted()` function are both used to sort a sequence or collection of objects. However, they work in slightly different ways.
 
-The sort() method is a method of the list class, and it is used to sort the elements of a list in place, meaning that it modifies the original list and does not return a new sorted list. It has the following syntax:
-
-Copy code
-list.sort(key=None, reverse=False)
-The key argument is
-
 |sort()|Sorted()|
 |----------------------|------------------------|
 |`sort` is a method only for the list class.| `sorted` is a function. It takes iterables like str, list, tuple and dictionary|
