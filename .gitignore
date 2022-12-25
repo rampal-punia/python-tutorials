@@ -8,6 +8,8 @@ __pycache__/
 
 # Local folder
 local_folder
+/demo.py
+demo.py
 
 
 # Distribution / packaging
