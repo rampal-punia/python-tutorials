@@ -73,3 +73,5 @@ for number in numbers:
 
 print("Loop is terminated")
 ```
+
+Note: The `break` statement will only exit the innermost loop in which it is used. If we have nested loops and we want to exit both loops, in this case, we can use the `break` statement in the inner loop and a `continue` statement in the outer loop to skip the rest of the outer loop's current iteration.
