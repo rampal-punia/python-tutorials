@@ -2,7 +2,7 @@
 
 Open you favorite code editor and create a file `hello_world.py`.
 
-### Python file extension is `.py`
+## Python file extension is `.py`
 
 In `hello_world.py`:
 
