@@ -4,6 +4,41 @@ In any programming language, variables are one of the most important basic-conce
 
 ## Variables in Python don't hold the data, they reference to the location of the data
 
+We can confirm this by using the `id()` function, which returns the memory address of the object.
+
+For example, for two different variables the location of the stored value is different, but if two variables have the same values then the `id()` function will print out the same memory address for both the variables, indicating that they are references to the same object.
+
+```python
+# Declare a list
+a = [3, 4, 5]
+
+# Declare another list
+b = [7, 8, 9]
+
+# Print memory address for both 'a' and 'b'
+print(id(a))
+print(id(b))
+
+# Output (Different memory location for both the variables):
+140188289375280
+140188290635632
+
+# But if we do:
+a = [3, 4, 5]
+# Assign the variable 'a' to the variable 'b'
+b = a
+
+print(id(a))
+print(id(b))
+
+# Output (Same memory location for both the variables):
+139761911799488
+139761911799488
+
+```
+
+Examples of different types of variable declaration in Python.
+
 ```python
 developer_name = "John"            # string
 age = 30                            # int

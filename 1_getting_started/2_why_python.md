@@ -54,3 +54,5 @@ If we summarize this, Python is:
 ⚡ Organizing Finances
 ⚡ Artificial Intelligence / Machine Learning / Deep Learning
 ⚡ Audio and Video Applications
+
+Note: No doubt Python is an easy-to-learn language. However, It is necessary to understand that just like any other programming language, it is hard to master Python.
