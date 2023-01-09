@@ -24,6 +24,8 @@ If we summarize this, Python is:
 
 ## In addition to that
 
+<br>
+
 ### 7 reasons why Python is beginner's friendly
 
 1. Simple syntax
@@ -39,6 +41,8 @@ If we summarize this, Python is:
 6. A huge supportive and helpful developer's community
 
 7. Strongly covers a variety of fields
+
+<br>
 
 ### Domains/Fields where Python is Useful
 
