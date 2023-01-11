@@ -29,6 +29,5 @@ print(d3)
 d3 = d1 | d2
 print(d3)
 
-_____________________________________________________________________________________________
 # Output (In all the cases)
 # {'name': 'John', 'age': 25, 'is_active': False, 'contact': 12345678, 'language': 'Python', 'experience': 12}

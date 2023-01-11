@@ -29,3 +29,10 @@
 - Bytes
 - Bytearray
 - Memoryview
+
+## Literals
+
+A representation of a fixed value in source code, including numerical values (integers, floats), string values, boolean values (True or False), and special values (e.g. None).
+
+For example:
+The number 20 is an integer literal, the string "hello world!" is a string literal, and the value `None` is a special literal.
