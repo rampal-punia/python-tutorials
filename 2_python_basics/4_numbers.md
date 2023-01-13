@@ -16,30 +16,59 @@ print(x)
 # Output: (20+8j)
 ```
 
+## Bool Subset of Integer (PEP-285)
+
+Bool are the subset of Integers, added 08-Mar-2002 by [PEP-0285](https://peps.python.org/pep-0285/)
+
+From PEP-285:
+
+>This PEP proposes the introduction of a new built-in type, bool, with two constants, False and True. The bool type would be a straightforward subtype (in C) of the int type, and the values False and True would behave like 0 and 1 in most respects (for example, False==0 and True==1 would be true) except repr() and str(). All built-in operations that conceptually return a Boolean result will be changed to return False or True instead of 0 or 1; for example, comparisons, the “not” operator, and predicates like isinstance().
+
+```python
+print(False == 0)       # True
+print(True == 1)        # True
+print(True == 1)        # True
+
+print(bool([]))         # False
+print(bool({}))         # False
+print(bool(set()))      # False
+print(bool(0))          # False
+print(bool(1))          # True
+print(bool(-1))         # True
+print(True)             # True
+print(False)            # False
+```
+
 ## Binary Representation
 
 ```python
+# Binary to decimal
 x = 0b110100    # binary (accepts only 0 and 1 after 0b)
 print(x)        # Output: 52
 
+# Decimal to binary
 print(bin(x))   # Output: 0b110100
 ```
 
 ## Octal Representation
 
 ```python
-x = 0o710    # Hexadecimal (accepts only 0-9, and a-f)
+# Octal to decimal
+x = 0o710       # Octal (accepts only 0-7)
 print(x)        # Output: 456
 
+# Decimal to octal
 print(oct(x))   # Output: 0o710
 ```
 
 ## Hexadecimal Representation
 
 ```python
+# Hexadecimal to decimal
 x = 0xef10    # Hexadecimal (accepts only 0-9, and a-f)
 print(x)        # Output: 61200
 
+# Decimal to Hexadecimal
 print(hex(x))   # Output: 0xef10
 ```
 
@@ -96,7 +125,7 @@ In a Python interpreter:
 
 # abs()
 x = -20.155
-print(abs(x))
+print(abs(x))           # Return the absolute value of the argument.
 # Output: 20.155
 
 # --------------------------------------------------------------- #
@@ -149,15 +178,24 @@ x %= 2      # Output: 0
 x **= 2     # # Output: 400
 ```
 
-## Int: All methods
+## Int, float, complex: All methods
 
-Using `dir()` method to list all the methods of int.
+Using `dir()` method to list all the methods of int, float and complex.
 
 ```python
-print([item for item in dir(y) if not item.startswith('_')])
+print([method for method in dir(int) if not method.startswith('_')])
 
 # Output:
-['as_integer_ratio', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+['as_integer_ratio', 'bit_length', 'conjugate', 'denominator',
+    'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+
+print([method for method in dir(float) if not method.startswith('_')])
+# Output:
+['as_integer_ratio', 'conjugate', 'fromhex', 'hex', 'imag', 'is_integer', 'real']
+
+print([method for method in dir(complex) if not method.startswith('_')])
+# Output:
+['conjugate', 'imag', 'real']
 ```
 
 Let's see all the methods one by one:

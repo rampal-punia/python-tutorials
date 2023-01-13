@@ -32,3 +32,11 @@ else:
 ```
 
 In this code, the if statement uses the > operator to check if the value of x is greater than the value of y. Since it is, it prints the message "x is greater than y".
+
+## All types of Operators in Python
+
+- Arithmetic Operators (discussed in Numbers)
+- Comparison/Relational Operators (Here)
+- Assignment Operators(discussed in Numbers)
+- Logical Operators(Next)
+- Others: Membership, Identity, and Bitwise Operators
