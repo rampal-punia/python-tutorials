@@ -1,6 +1,6 @@
 # Python Tutorials Series
 
-Note: Rapid inclusion of the various Python-Topics is under active development.
+Note: Inclusion of the various Python-Topics is under active development.
 
 ## 1. [Introduction](https://github.com/CodingMantras/PythonTutorials/tree/master/1_introduction)
 
