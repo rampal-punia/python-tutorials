@@ -91,7 +91,7 @@ Python creates the variable whenever we assign any type of object to it. We read
 
 In Python, everything is an object and every object has an identity, value and type.
 
-**ID**: An id is the object's address in the memory and it never changes once it is created. Use the in-built function id() to check the identity of any object. It returns an integer.
+**ID**: An id is the object's address in the memory and it never changes once it is created. Use the in-built function id() to check the identity of any object. It returns an integer. And, the `is` operator compares the identity of two objects
 
 ```python
 language = "Python"

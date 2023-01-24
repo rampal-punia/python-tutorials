@@ -48,6 +48,10 @@ print(x)        # Output: 52
 
 # Decimal to binary
 print(bin(x))   # Output: 0b110100
+
+# Using format
+number = 52
+print(f"{number: b}")   # 110100 
 ```
 
 ## Octal Representation
@@ -59,6 +63,10 @@ print(x)        # Output: 456
 
 # Decimal to octal
 print(oct(x))   # Output: 0o710
+
+# Using format
+number = 456
+print(f"{number: o}")   # 710
 ```
 
 ## Hexadecimal Representation
@@ -70,6 +78,10 @@ print(x)        # Output: 61200
 
 # Decimal to Hexadecimal
 print(hex(x))   # Output: 0xef10
+
+# Using format
+number = 61200
+print(f"{number: x}")       # ef10
 ```
 
 **Recap**:

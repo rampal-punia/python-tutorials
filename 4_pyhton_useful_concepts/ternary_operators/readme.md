@@ -5,7 +5,7 @@ Using a conditional operation in a single line as a switch to get one or another
 ## Syntax
 
 ```bash
-[on_condition_true] if [condition] else [on_condition_false]
+[value_if_true] if [condition] else [value_if_value]
 ```
 
 ## Example
@@ -15,7 +15,7 @@ a = 4
 b = 9
 
 max_value = a if a > b else b
-# It means, max_value wiil be a if a is greater than b, otherwise b
+# It means, max_value will be a if a is greater than b, otherwise b
 
 print(max_value)
 # Output: 9
@@ -26,6 +26,7 @@ print(max_value)
 If we need to do a different thing depending on the condition we use if-condition. But sometimes we use ternary conditional operator to compute the value and then do something with the result.
 
 ## Using multiple conditions in a ternary operators
+
 [false_value, true_value](test)
 
 Example:
@@ -40,11 +41,15 @@ print(greeting)
 
 ## Using ternary operators in a tuple
 
-### Syntax
+### Syntax for ternary in a tuple
 
 ```(false_value, true_value)[test]```
 
-### Example
+or
+
+```x, y = (1, 2) if condition else (3, 4)```
+
+### Example for ternary in a tuple
 
 ```python
 a = 4
