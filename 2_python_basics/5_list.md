@@ -196,11 +196,9 @@ list2 = [4, 5, 6]
 print([*list1, *list2])
 ```
 
-## Useful Lists Methods
-
 ### len()
 
-The len() method is used to determine the length of an iterable (Total number of elements in the list). For example:
+The len() is an in-built function in python to get the length of an iterable. For example:
 
 ```python
 # Define a list
@@ -214,6 +212,71 @@ print(list_length)  # Output: 6
 ```
 
 len() function takes an iterable and return the number of items in a iterable.
+
+## Useful Lists Methods
+
+|Name of the method|Description|
+|--------------|--------------------|
+|append(x)| Adds an item (x) to the end of the list.|
+|extend(iterable)| Adds all the items from an iterable (e.g. list, tuple, string) to the end of the list.|
+|insert(i, x)| Inserts an item (x) at a given position (i) in the list.|
+|remove(x)| Removes the first item from the list that has the value x.|
+|pop([i])| Removes and returns the item at the given position (i) in the list. If no position is specified, it removes and returns the last item.|
+|clear()| Removes all items from the list.|
+|index(x)| Returns the index of the first item in the list that has the value x.|
+|count(x)| Returns the number of times x appears in the list.|
+|sort()| Sorts the items in the list in ascending order.|
+|reverse()| Reverses the order of the items in the list.|
+|copy()| Returns a shallow copy of the list.|
+|||
+
+Implementation examples:
+
+```python
+>>> my_list = [1, 2, 3, 4, 5]
+>>> my_list.append(6)
+>>> print(my_list)
+[1, 2, 3, 4, 5, 6]
+
+>>> my_list = [1, 2, 3, 4, 5]
+>>> my_list.extend([6, 7, 8])
+>>> print(my_list)
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+>>> my_list = [1, 2, 3, 4, 5, 6, 7, 8]
+>>> my_list.remove(6)
+>>> print(my_list)
+[1, 2, 3, 4, 5, 7, 8]
+
+
+>>> my_list = [1, 2, 3, 4, 5, 6, 7, 8]
+>>> index_of_item = my_list.index(6)
+>>> print(index_of_item)
+5
+
+>>> my_list = [1, 2, 3, 4, 5]
+>>> my_list.reverse()
+>>> print(my_list)
+[5, 4, 3, 2, 1]
+
+>>> my_list = [1, 2, 3, 4, 5]
+>>> copied_list = my_list.copy()
+>>> print(copied_list)
+[1, 2, 3, 4, 5]
+```
+
+Note: The copy() method creates a shallow copy of the list. So, if the list contains objects, the copy will refer to the same objects as the original list, and any modification made to the objects will be reflected in both the original and the copied list.
+
+If you need a deep copy of the list, you can use the copy module in python, for example:
+
+```python
+import copy
+
+original = [1, 2, [3, 4]]
+deep_copied = copy.deepcopy(original)
+```
+
+Few more methods with more explanation:
 
 ### count()
 
