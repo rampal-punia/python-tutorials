@@ -1,11 +1,14 @@
-'''🚀 Age Calculator In Python.'''
+'''✨ Age Calculator In Python.✨'''
 from datetime import date
+year_of_birth = 1995
+month_of_birth = 1
+day_of_birth = 1
 
 today = date.today()
 print(f"Today: {today}")
 
 # 👉 Given, Date of Birth
-dob = date(year=1995, month=1, day=1)
+dob = date(year_of_birth, month_of_birth, day_of_birth)
 print(f"DOB: {dob}")
 
 # 👉 Days till today
