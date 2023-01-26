@@ -2,6 +2,7 @@
 from datetime import date
 import dateutil.relativedelta as rd
 
+# 👉 Given Date of Birth (Year, month, date)
 year_of_birth = 1995
 month_of_birth = 1
 day_of_birth = 1
@@ -9,7 +10,7 @@ day_of_birth = 1
 today = date.today()
 print(f"Today: {today}")
 
-# 👉 Given, Date of Birth
+# 👉 Print DOB
 dob = date(year_of_birth, month_of_birth, day_of_birth)
 print(f"DOB: {dob}")
 
