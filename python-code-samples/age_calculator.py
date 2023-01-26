@@ -1,4 +1,4 @@
-'''🚀 Age Calculator In Python'''
+'''🚀 Age Calculator In Python.'''
 from datetime import date
 
 today = date.today()
@@ -15,3 +15,5 @@ print(f"Days: {total_days}")
 # 👉 Years till today
 years = total_days/365
 print(f"In Years: {years:.2f}")
+
+# Note: This does not take into account the leap year.
