@@ -160,13 +160,50 @@ It's worth mentioning that the parentheses `()` also have a different use as gro
 
 So, in short, the symbols {}, [], () in Python are used to create different types of data structures and have different meanings depending on the context in which they are used.
 
-## 7 Things to keep in mind while single line assignment for the variables
+## 7. Things to keep in mind while single line assignment for the variables
 
-Ans:
+Ans: When assigning variables in a single line in Python, there are a few things to keep in mind:
+
+The syntax for multiple assignments in a single line is to separate the variables with commas and assign them in a single line. For example:
+
+```python
+x, y, z = 1, 2, 3
+```
+
+The number of variables on the left-hand side must match the number of values on the right-hand side. If the numbers don't match, Python will raise a ValueError.
+
+You can use any valid expressions on the right-hand side of the assignment statement. This includes literals, variables, and expressions involving operators and functions.
+
+You can also use unpacking to assign multiple values from a single iterable object to multiple variables in a single line. For example:
+
+```python
+a, b, c = [1, 2, 3]
+```
+
+You can use parentheses to group variables and values together for clarity. For example:
+
+```python
+(a, b, c) = (1, 2, 3)
+```
+
+If you don't need to use a variable, you can use an underscore (_) as a placeholder. For example:
+
+```python
+x, _, z = (1, 2, 3)
+```
+
+It's generally recommended to use meaningful variable names instead of single-letter variable names, especially in larger programs or scripts. Overall, using single-line assignments can make code more concise and easier to read, but it's important to use them judiciously and with readability in mind.
 
 ## 8 What is the general convention in Python to declare a Constant?
 
-Ans:
+Ans: In Python, there is no specific keyword to declare constants like other programming languages. However, a general convention is to declare constants using all uppercase letters and underscores to separate words, like this:
+
+```python
+MY_CONSTANT = 10
+ANOTHER_CONSTANT = "Hello"
+```
+
+This convention makes it easy to distinguish constants from variables, and also indicates that the value should not be changed during the program execution. However, it's important to note that this is just a convention, and Python does not enforce the immutability of the variables declared as constants.
 
 ## 9 Define the feature "self-documenting expression with '=' character" added in Python 3.8
 
@@ -174,27 +211,126 @@ Ans:
 
 ## 10 How would you print a tab in Python?
 
-Ans:
+Ans: To print a tab in Python, you can use the escape character \t inside a string.
+
+For example:
+
+```python
+print("Hello\tWorld")
+```
+
+This will output:
+
+```bash
+Hello   World
+```
+
+Note that the tab character is equivalent to four spaces by default in most text editors and terminals.
 
 ## 11 If we multiply "Hello" with 10 in Python what output do we get?
 
-Ans:
+Ans: Multiplying a string with an integer in Python creates a new string by repeating the original string a specified number of times.
+
+For example, if we multiply "Hello" with 10, we will get the output as:
+
+```python
+"Hello" * 10
+```
+
+Output:
+
+```bash
+'HelloHelloHelloHelloHelloHelloHelloHelloHelloHello'
+```
+
+The original string "Hello" is repeated 10 times to create a new string with a length of 50 characters.
 
 ## 12 From a string "Learning Python Is A Fun" write steps to extract word 'Python'
 
-Ans:
+Ans: The steps to extract the word 'Python' from the string "Learning Python Is A Fun" in Python:
+
+- Split the string into a list of words using the built-in string method `split()`.
+- Iterate through the list of words using a for loop.
+- Check each word in the list to see if it matches the string 'Python'.
+- If the word matches 'Python', print it or store it in a variable.
+
+Python code to implement these steps:
+
+```python
+string = "Learning Python Is A Fun"
+words = string.split() # Split the string into a list of words
+for word in words: # Iterate through the list of words
+    if word == "Python": # Check if the word matches 'Python'
+        print(word) # Print the word 'Python'
+```
+
+This code will output the word 'Python' from the given string. Note that this approach assumes that the word 'Python' is present only once in the string. If the word 'Python' appears multiple times in the string, you may need to modify the code to handle this case accordingly.
+
+Another way to achieve the same result is using the `find() method of strings.
+
+```python
+s = "Learning Python Is A Fun"
+start = s.find("Python")
+end = start + len("Python")
+
+if start != -1:
+    word = s[start:end]
+    print(word)
+else:
+    print("Word not found")
+```
+
+If the find method returns -1, it means that the word was not found in the string. In that case, we print an appropriate message.
 
 ## 13 How would you get the length of a string?
 
-Ans:
+Ans: In Python, you can get the length of a string using the built-in len() function.
 
-## 14 Print all the 'n' from the string ""Learning Python Is A Fun"
+Here is an example:
 
-Ans:
+```python
+string = "Hello World!"
+length = len(string)
+print(length) # Output: 12
+```
+
+In this example, the len() function is applied to the string "Hello World!" to get its length, which is then stored in the variable length. Finally, the length is printed to the console using the print() function.
+
+## 14 Find the number of count of the character 'n' from the string ""Learning Python Is A Fun"
+
+Ans: To find the number of counts of the character 'n' from the string "Learning Python Is A Fun" in Python, you can use the count() method. Here's an example code:
+
+```python
+string = "Learning Python Is A Fun"
+count = string.count('n')
+print(count)
+```
+
+This will output 4, which is the number of times the character 'n' appears in the given string. The count() method returns the number of occurrences of the specified substring or character in the string.
 
 ## 15 What is the difference between capitalize() and title() methods in python strings?
 
-Ans:
+Ans: Both capitalize() and title() are string methods in Python that modify the capitalization of a string, but they work in slightly different ways:
+
+capitalize(): This method capitalizes only the first character of a string and makes all other characters lower case. It does not affect any other characters in the string. For example:
+
+```python
+string = "hello world"
+new_string = string.capitalize()
+print(new_string)
+# Output: "Hello world"
+```
+
+title(): This method capitalizes the first character of every word in a string and makes all other characters lower case. It also does not affect any other characters in the string. For example:
+
+```python
+string = "hello world"
+new_string = string.title()
+print(new_string)
+# Output: "Hello World"
+```
+
+Therefore, the main difference between capitalize() and title() is that capitalize() capitalizes only the first character of the string, whereas title() capitalizes the first character of every word in the string.
 
 ## 16 For a given number 72 print the binary octal and hexagonal value
 
@@ -334,14 +470,20 @@ You can use any separator instead of the space, for example, you could use "_" t
 result = "_".join(my_list)
 ```
 
-This would output the string: "Learning_Python_Is_Fun"
-
-It's worth noting that the join() method is called on the separator string and not the list, this is the opposite of the split() method that is called on the string and not the separator.
+This would output the string: "Learning_Python_Is_Fun". It's worth noting that the join() method is called on the separator string and not the list.
 
 ## 20 What would be output of the below code?
 
-Ans: print(False + 1.5)
+```python
+print(False + 1.5)
 print(True + 1.5)
+```
+
+Ans: 1.5
+2.5
+
+Because False is treated as 0 and True is treated as 1 in a numerical context.
+
 In this code, the + operator is used to add the value of the False boolean to the value of the 1.5 float. In Python, the False boolean is treated as the integer value 0 when used in a mathematical operation, so the expression False + 1.5 is equivalent to 0 + 1.5, which evaluates to 1.5.
 
 It's worth noting that Boolean values in Python can be used in numerical contexts, which is why you can use the + operator on the boolean value False.
@@ -400,11 +542,69 @@ This will output 2, the substring "cdc" appears twice in the string "abcdcdc"
 
 The above code uses a for loop to iterate over the string, and check if the substring is present at the current position, by comparing the slice of the string starting at the current position with the length of the substring, to the substring.
 
-It's worth noting that this approach is less efficient than using the re module, but is simple and easy to understand for this specific problem.
+It's worth noting that this approach is less efficient than using the `re` module, but is simple and easy to understand for this specific problem.
 
-## 23  any and all functions
+You can use the `re.findall()` function to find all occurrences of a pattern (in this case, the substring) in a string, and then get the length of the resulting list.
 
-Ans: ```python
+```python
+import re
+
+string = "abcdcdc"
+substring = "cdc"
+pattern = f'(?={substring})'
+count = len(re.findall(pattern, string))
+print(count)
+```
+
+This will output 2, the substring "cdc" appears twice in the string "abcdcdc".
+
+Using the re module allows for more complex patterns to be searched for, but may be overkill for simple substring searches.
+
+## 23  Define the any and all functions In Python
+
+Ans: The `any()` and `all()` functions in Python are built-in functions that operate on iterable objects such as lists, tuples, and sets.
+
+The `any()` function takes an iterable and returns `True` if at least one element in the iterable is True. If all elements in the iterable are False, then it returns `False`.
+
+Here's an example:
+
+```python
+my_list = [False, False, True, False]
+print(any(my_list))  # prints True
+```
+
+In the example above, the `any()` function returns True because at least one element in the list is True.
+
+The `all()` function, on the other hand, takes an iterable and returns `True` if all elements in the iterable are True. If any element in the iterable is False, then it returns `False`.
+
+Here's an example:
+
+```python
+my_list = [True, True, True, False]
+print(all(my_list))  # prints False
+```
+
+In the example above, the `all()` function returns False because not all elements in the list are True.
+
+These functions are commonly used in conditional statements, list comprehensions, and generator expressions to test if all or any elements in the iterable meet a certain condition.
+
+For example, if you want to check if any number in a list is greater than 10, you can use the any() function:
+
+```python
+my_list = [5, 8, 12, 7, 3]
+if any(num > 10 for num in my_list):
+    print("At least one number is greater than 10")
+else:
+    print("No number is greater than 10")
+```
+
+In the example above, the any() function is used to check if any number in my_list is greater than 10. If at least one number is greater than 10, then the first message will be printed, otherwise the second message will be printed.
+
+Similarly, you can use the all() function to check if all elements in an iterable meet a certain condition.
+
+## 24 For a given string 'aA2', with the help of string methods find is there any alpha, digit, lower of upper character in the string
+
+```python
 if __name__ == '__main__':
     s = "aA2"
     has_alpha = any(c.isalpha() for c in s)
@@ -415,7 +615,6 @@ if __name__ == '__main__':
     print(has_digit)
     print(has_lower)
     print(has_upper)
-
 ```
 
 In this modified code, I've used the built-in string methods isalpha(), isdigit(), islower(), and isupper() to check for the presence of alphabets, digits, lowercase letters, and uppercase letters respectively. These methods returns True if the character is an alphabet, digit, lowercase letter, or uppercase letter respectively, otherwise returns False.

@@ -121,3 +121,47 @@
 Knowing about these questions and exploring the answers to these questions may help you be a better Python programmer.
 
 These questions are useful for not only acquiring knowledge about Python but also for certification exams & preparing for interviews.
+
+## More questions
+
+- How to iterate over two lists in parallel in Python?
+- What is the difference between append() and extend() methods in Python lists?
+- How to find the largest and smallest number in a list using Python?
+- How to remove duplicates from a list in Python?
+- How to concatenate two lists in Python?
+- How to remove all occurrences of an element from a list in Python?
+- How to find the intersection of two lists in Python?
+- How to find the union of two lists in Python?
+- What is the difference between sets and lists in Python?
+- How to check if two lists are equal in Python?
+- How to count the number of occurrences of a specific element in a list in Python?
+- How to remove an item from a list in Python?
+- How to convert a list to a string in Python?
+- What is the difference between list and tuple in Python?
+- What is the difference between tuples and lists in Python?
+- How to sort a dictionary by values in Python?
+- How to reverse a string in Python?
+- How to check if a string is a palindrome in Python?
+- What is a lambda function in Python and how to use it?
+- How to find the index of an element in a list in Python?
+- What is the difference between a set and a dictionary in Python?
+- How to create an empty dictionary in Python?
+- How to check if a key exists in a dictionary in Python?
+- How to remove a key from a dictionary in Python?
+- How to iterate over a dictionary in Python?
+- How to sort a list of dictionaries in Python?
+- How to reverse a list in Python?
+- What is the difference between a shallow and deep copy in Python?
+- How to remove whitespace from a string in Python?
+- How to check if a string contains a substring in Python?
+- How to count the number of occurrences of a substring in a string in Python?
+- What are the any() and all() functions in Python?
+- How to declare a constant in Python?
+- What is the self-documenting expression feature added in Python 3.8?
+- How to print a tab in Python?
+- What is the output when "Hello" is multiplied by 10 in Python?
+- How to extract a specific word from a string in Python?
+- What is the length of a string in Python?
+- How to print all occurrences of a specific character in a string in Python?
+- How to count the number of occurrences of a specific character in a string in Python?
+- What is the difference between capitalize() and title() methods in Python strings?
