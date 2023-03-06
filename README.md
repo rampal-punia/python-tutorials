@@ -2,26 +2,52 @@
 
 Note: Inclusion of the various Python-Topics is under active development.
 
-## 1. [Introduction](https://github.com/CodingMantras/PythonTutorials/tree/master/1_introduction)
+## 1. [Getting Started](https://github.com/CodingMantras/PythonTutorials/tree/master/1_introduction)
 
 ||||
 |---------------|----------------|--------------------|
 |i) [Programming Languages](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/1_programming_language.md)|ii) [Why Python](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/2_why_python.md) |iii) [Installing Python](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/3_installing_python.md) |
 |iv) [Installing code editor](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/4_installing_code_editor.md)| v) [**Hello World** program](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/5_hello_world.md)|iv) [Styles and Conventions](https://github.com/CodingMantras/PythonTutorials/blob/master/1_getting_started/6_styles_and_conventions.md)|
 
-## 2. Python basics
+## 2. Python Data-Types
 
 ||||
 |---------------|----------------|--------------------|
 |i) [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/1_variables.md) | ii) [Built-in data types](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/2_builtin_datatypes.md)| iii) [Strings](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/3.1_strings.md) |
 |iv) [Numbers](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/4_numbers.md)| v) [List](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/5_list.md)    | vi) [Tuple](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/6_tuples.md) |
-|vii) [Dictionary](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/7_dictionary.md) | viii) [Sets](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/8_sets.md) |ix) [If-statement](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/9_if_statement.md) |
-|x) [Comparison Operators](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/10_comparison_operators.md)|xi) [Logical operators](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/11_logical_operators.md)|xii) [For loop](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/12_for_loop.md) |
-|xiii) [While loop](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/13_while_loop.md) |xiv) [Input function](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/14_input_function.md) | xv) [Functions](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/15_functions.md)|
-|xvi) [Modules](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/16_modules.md) |||
+|vii) [Dictionary](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/7_dictionary.md) | viii) [Sets](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/8_sets.md) |
 ||||
 
-## 3. Classes
+## 3. Conditions And Operators
+
+||||
+|---------------|----------------|--------------------|
+|i) [If-statement]() |ii) [Comparison Operators]()|iii) [Logical operators]()|
+||||
+
+## 4. Loops
+
+||||
+|---------------|----------------|--------------------|
+|i) [For loop]() |ii) [While loop]() ||
+||||
+
+## 5. Input and Print Functions
+
+||||
+|---------------|----------------|--------------------|
+|i) [Input function]() | ii) [Print Functions]()|
+||||
+
+## 6. Modules, Packages, Libraries & Frameworks
+
+||||
+|---------------|----------------|--------------------|
+|i) [Modules]() |ii) [Packages]()|[Library]()|
+|i) [Frameworks]() |||
+||||
+
+## 7. Classes
 
 [Separate repository](https://github.com/CodingMantras/python-class-tutorial) covering Python classes in detail. Following topics are covered in it.
 ||||
@@ -31,7 +57,7 @@ Note: Inclusion of the various Python-Topics is under active development.
 |vii) Instance and class variables | viii) Instance, class and static methods| ix) dir(), help(**class**), MRO, is_instance and **dict** methods|
 |x) Use of property decorator | xi) OOPs concepts| |
 
-## 4. Useful Concepts
+## 8. Must-Know Concepts
 
 ||||
 |---------------|----------------|--------------------|
@@ -41,7 +67,7 @@ Note: Inclusion of the various Python-Topics is under active development.
 |x) Sort and Sorted |xi) Len and Count |xii) Mutable and Immutable data types|
 |xiii) Error and Exception Handling |xiv) Creating Virtual Environment| xv) Pypi, Pip & Installing packages|
 
-## 5. Advanced Concepts
+## 9. Advanced Concepts
 
 ||||
 |---------------|----------------|--------------------|
@@ -50,7 +76,7 @@ Note: Inclusion of the various Python-Topics is under active development.
 |vii) Multi-processing |viii) Callable objects | ix) Ellipsis|
 |x) Higher Order Functions || |
 
-## 6. Python Inbuilt packages
+## 10. Built-In Modules
 
 ||||
 |---------------|----------------|------------|

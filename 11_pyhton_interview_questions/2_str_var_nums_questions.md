@@ -362,7 +362,7 @@ print(new_string)
 
 Therefore, the main difference between capitalize() and title() is that capitalize() capitalizes only the first character of the string, whereas title() capitalizes the first character of every word in the string.
 
-## 16 For a given number 72 print the binary octal and hexagonal value
+## 16 For a given number 72 print the binary octal and hexadecimal values
 
 Ans: In Python, you can use the built-in bin(), oct(), and hex() functions to convert an integer to its binary, octal, and hexadecimal representation, respectively.
 
@@ -370,10 +370,9 @@ Here's an example of how you might use these functions to print the binary, octa
 
 ```python
 number = 72
-print("Binary:", bin(number))
-print("Octal:", oct(number))
-print("Hexadecimal:", hex(number))
-
+print(f"Binary: {bin(number)}")
+print(f"Octal: {oct(number)}")
+print(f"Hexadecimal: {hex(number)}")
 ```
 
 output:
@@ -393,14 +392,19 @@ number = 72
 print("Binary: {}".format(format(number, 'b')))
 print("Octal: {}".format(format(number, 'o')))
 print("Hexadecimal: {}".format(format(number, 'x')))
-
-# Output:
-Binary: 1001000
-Octal: 110
-Hexadecimal: 48
 ```
 
 The 'b', 'o', and 'x' in the format() method represent the format code for binary, octal, and hexadecimal, respectively. The curly braces {} are used as placeholders for the formatted value.
+
+Another way to achieve this result:
+
+```python
+number = 72
+
+print(f"Binary: {number:b}")
+print(f"Octal: {number:o}")
+print(f"Hexadecimal: {number:x}")
+```
 
 It's worth noting that the bin(), oct(), hex() functions return string representation of the numbers, if you want to use them for mathematical operation you need to convert them back to int using int() function.
 
