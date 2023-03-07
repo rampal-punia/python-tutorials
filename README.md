@@ -13,9 +13,9 @@ Note: Inclusion of the various Python-Topics is under active development.
 
 ||||
 |---------------|----------------|--------------------|
-|i) [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/1_variables.md) | ii) [Built-in data types](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/2_builtin_datatypes.md)| iii) [Strings](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/3.1_strings.md) |
-|iv) [Numbers](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/4_numbers.md)| v) [List](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/5_list.md)    | vi) [Tuple](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/6_tuples.md) |
-|vii) [Dictionary](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/7_dictionary.md) | viii) [Sets](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_basics/8_sets.md) |
+|i) [Variables](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_data_types/1_variables.md) | ii) [Built-in data types](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_data_types/2_builtin_datatypes.md)| iii) [Strings](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_data_types/3.1_strings.md) |
+|iv) [Numbers](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_data_types/4_numbers.md)| v) [List](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_data_types/5_list.md)    | vi) [Tuple](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_data_types/6_tuples.md) |
+|vii) [Dictionary](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_data_types/7_dictionary.md) | viii) [Sets](https://github.com/CodingMantras/python-tutorials/blob/master/2_python_data_types/8_sets.md) |
 ||||
 
 ## 3. Conditions And Operators
