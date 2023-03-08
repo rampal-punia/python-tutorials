@@ -22,29 +22,29 @@ Note: Inclusion of the various Python-Topics is under active development.
 
 ||||
 |---------------|----------------|--------------------|
-|i) [If-statement]() |ii) [Comparison Operators]()|iii) [Logical operators]()|
+|i) [If-statement](https://github.com/CodingMantras/python-tutorials/blob/master/3_conditions_operators/1_if_statement.md) |ii) [Comparison Operators](https://github.com/CodingMantras/python-tutorials/blob/master/3_conditions_operators/2_comparison_operators.md)|iii) [Logical operators](https://github.com/CodingMantras/python-tutorials/blob/master/3_conditions_operators/3_logical_operators.md)|
 ||||
 
 ## 4. Loops
 
 ||||
 |---------------|----------------|--------------------|
-|i) [For loop]() |ii) [While loop]() ||
+|i) [For loop](https://github.com/CodingMantras/python-tutorials/blob/master/4_loops_in_python/1_for_loop.md) |ii) [While loop](https://github.com/CodingMantras/python-tutorials/blob/master/4_loops_in_python/2_while_loop.md) ||
 ||||
 
 ## 5. Input and Print Functions
 
 ||||
 |---------------|----------------|--------------------|
-|i) [Input function]() | ii) [Print Functions]()|
+|i) [Input function](https://github.com/CodingMantras/python-tutorials/blob/master/5_functions_and_builtin_functions/1_input_function.md) | ii) [Print Functions](https://github.com/CodingMantras/python-tutorials/blob/master/5_functions_and_builtin_functions/2_functions.md)|
 ||||
 
 ## 6. Modules, Packages, Libraries & Frameworks
 
 ||||
 |---------------|----------------|--------------------|
-|i) [Modules]() |ii) [Packages]()|[Library]()|
-|i) [Frameworks]() |||
+|i) [Modules](https://github.com/CodingMantras/python-tutorials/blob/master/6_modules_packages_libs_frameworks/1_modules.md) |ii) Packages|Library|
+|i) Frameworks |||
 ||||
 
 ## 7. Classes
